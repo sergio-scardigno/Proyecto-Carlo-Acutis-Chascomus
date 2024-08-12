@@ -10,6 +10,8 @@ export default function Home() {
                 {t('title')}
             </h1>
             <p className="text-center mb-4">{t('description')}</p>
+            {/* Separador */}
+            <hr className="w-full border-t border-gray-300 my-4" />
             <Image
                 src="/img/carlo-acutis.webp"
                 width={500}
@@ -21,6 +23,11 @@ export default function Home() {
                 {t('title-prayer')}
             </h2>{' '}
             <p className="text-center mt-8">{t('prayer')}</p>
+            {/* Separador */}
+            <hr className="w-full border-t border-gray-300 my-4" />
+            <p className="text-center text-2xl font-semibold mt-4">
+                {t('song-intro')}
+            </p>
             <iframe
                 className="mt-8"
                 width="560"
