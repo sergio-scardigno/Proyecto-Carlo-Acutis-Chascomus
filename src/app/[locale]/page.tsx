@@ -30,7 +30,7 @@ export default function Home() {
             </p>
             <iframe
                 className="mt-8"
-                width="560"
+                width="400"
                 height="315"
                 src="https://www.youtube.com/embed/mr2pfZZREOg?si=sDTvKSsCM8LmJDnp"
                 title="YouTube video player"
