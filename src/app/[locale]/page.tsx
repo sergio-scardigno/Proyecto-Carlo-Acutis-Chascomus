@@ -21,6 +21,17 @@ export default function Home() {
                 {t('title-prayer')}
             </h2>{' '}
             <p className="text-center mt-8">{t('prayer')}</p>
+            <iframe
+                className="mt-8"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/mr2pfZZREOg?si=sDTvKSsCM8LmJDnp"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+            ></iframe>
         </div>
     );
 }
