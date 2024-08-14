@@ -26,6 +26,14 @@ export default function Home() {
             <p className="text-center mt-8">{t('prayer')}</p>
             {/* Separador */}
             <hr className="w-full border-t border-gray-300 my-4" />
+            <Image
+                src="/img/folleto.webp"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+                className="rounded-lg shadow-lg"
+            />
+            <hr className="w-full border-t border-gray-300 my-4" />
             <p className="text-center text-2xl font-semibold mt-4">
                 {t('song-intro')}
             </p>
