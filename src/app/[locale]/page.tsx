@@ -45,6 +45,12 @@ export default function Home() {
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
+            <hr className="w-full border-t border-gray-300 my-4" />
+            <p className="text-center text-base mb-4 mt-4">
+                {t('bibliography-intro')}
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3IQF38Icrgw?si=EthKfFau--vgBseL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </div>
     );
 }
