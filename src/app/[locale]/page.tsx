@@ -49,8 +49,13 @@ export default function Home() {
             <p className="text-center text-base mb-4 mt-4">
                 {t('bibliography-intro')}
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3IQF38Icrgw?si=EthKfFau--vgBseL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/3IQF38Icrgw?si=EthKfFau--vgBseL"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
         </div>
     );
 }

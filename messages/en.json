@@ -7,12 +7,17 @@
         "song-intro": "Enjoy this inspiring song dedicated to Carlo Acutis.",
         "bibliography-intro": "This content has been created by a third party, collecting video clips from the documentary 'La mia autostrada per il Cielo' and various images available on Carlo's official website."
     },
+    "Oracion": {
+        "title": "Prayer Title",
+        "description": "This is the prayer page."
+    },
     "NotFoundPage": {
         "title": "Page Not Found",
         "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
     },
     "Navigation": {
-        "home": "Home"
+        "home": "Home",
+        "url": "Oracion"
     },
     "Footer": {
         "copyright": "© 2024 Landing page Carlo Acutis. All rights reserved."
