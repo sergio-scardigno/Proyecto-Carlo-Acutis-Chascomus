@@ -20,10 +20,15 @@ export default function Home() {
                 alt="Picture of the author"
                 className="rounded-lg shadow-lg"
             />
-            <h2 className="text-2xl mb-2 font-semibold text-center mt-5">
-                {t('title-prayer')}
-            </h2>{' '}
-            <p className="text-center mt-8">{t('prayer')}</p>
+
+            <hr className="w-full border-t border-gray-300 my-4" />
+            <p className="text-center text-base mb-4 mt-4">
+                {t('bibliography-intro')}
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3IQF38Icrgw?si=EthKfFau--vgBseL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+
+
+
             {/* Separador */}
             <hr className="w-full border-t border-gray-300 my-4" />
             <Image
@@ -33,6 +38,18 @@ export default function Home() {
                 alt="Picture of the author"
                 className="rounded-lg shadow-lg"
             />
+
+
+            <hr className="w-full border-t border-gray-300 my-4" />
+            <p className="text-center text-2xl font-semibold mt-4">
+                {t('who-is')}
+                
+            </p>
+            
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9UHes5e8gU4?si=hMZkB-VvdZ9aWXy5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
             <hr className="w-full border-t border-gray-300 my-4" />
             <p className="text-center text-2xl font-semibold mt-4">
                 {t('song-intro')}
@@ -46,11 +63,6 @@ export default function Home() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
             <hr className="w-full border-t border-gray-300 my-4" />
-            <p className="text-center text-base mb-4 mt-4">
-                {t('bibliography-intro')}
-            </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3IQF38Icrgw?si=EthKfFau--vgBseL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-
         </div>
     );
 }
