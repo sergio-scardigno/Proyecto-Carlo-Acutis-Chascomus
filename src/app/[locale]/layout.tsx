@@ -40,9 +40,9 @@ export default async function RootLayout({
                     <div className="flex flex-col min-h-screen max-w-4xl mx-auto content-body">
                         <Header />
                         <div className="flex-grow mt-20">{children}</div>
-                        <Footer />
                     </div>
                 </NextIntlClientProvider>
+                <Footer />
             </body>
         </html>
     );

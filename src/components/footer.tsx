@@ -27,7 +27,6 @@ export default function Footer() {
 
     return (
         <div className="my-10 text-center">
-            <p>{t('copyright')}</p>
             <p className="mt-5">
                 <a
                     href="https://cv-sergio-scardigno.vercel.app/"
@@ -36,15 +35,13 @@ export default function Footer() {
                     className="custom-button"
                 >
                     <span className="icon">
-                        {/* Aquí puedes usar un ícono o imagen */}
                         <img
                             src="/img/programmer.png"
-                            alt="icon"
+                            alt="Desarrollado por Sergio Scardigno"
                             width={16}
                             height={16}
                         />
                     </span>
-                    <span className="text-footer-sign">{t('portfolio')}</span>
                 </a>
             </p>
         </div>

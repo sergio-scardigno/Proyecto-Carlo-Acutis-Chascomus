@@ -50,9 +50,12 @@ h1 {
 .custom-button {
     display: inline-flex;
     align-items: center;
-    padding: 8px 12px;
+    justify-content: center; /* Centra el contenido dentro del círculo */
+    width: 30px; /* Ajusta el tamaño del círculo */
+    height: 30px; /* Asegura que el ancho y alto sean iguales */
     border: 1px solid #ffffff; /* Color del borde */
-    border-radius: 6px; /* Bordes redondeados */
+    background-color: #f7fafc;
+    border-radius: 50%; /* Hace el botón completamente circular */
     text-decoration: none;
     color: #1a202c; /* Color del texto */
     transition: all 0.3s ease;
@@ -64,7 +67,7 @@ h1 {
 }
 
 .icon {
-    margin-right: 8px; /* Espacio entre el icono y el texto */
+    margin-right: 0px; /* Espacio entre el icono y el texto */
 }
 
 .icon img {
