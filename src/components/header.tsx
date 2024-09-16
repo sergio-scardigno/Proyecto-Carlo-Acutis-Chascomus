@@ -15,9 +15,13 @@ export default function Header() {
         <header className="p-4">
             <nav className="flex items-center justify-between switcher">
                 {/* Link a la página principal con el locale actual */}
-                <Link href={`/${locale}`}>{t('home')}</Link>
+                <Link href={`/${locale}`} className="nav-link">
+                    {t('home')}
+                </Link>
                 {/* Link a la página de oración con el locale actual */}
-                <Link href={`/${locale}/oracion`}>{t('url')}</Link>
+                <Link href={`/${locale}/oracion`} className="nav-link">
+                    {t('url')}
+                </Link>
                 {/* Componente para cambiar de idioma */}
                 <LocalSwitcher />
             </nav>
