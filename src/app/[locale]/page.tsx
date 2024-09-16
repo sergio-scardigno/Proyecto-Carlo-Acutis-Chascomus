@@ -69,16 +69,6 @@ export default function Home() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
             <hr className="w-full border-t border-gray-300 my-4" />
-            <p className="text-center text-base mb-4 mt-4">
-                {t('bibliography-intro')}
-            </p>
-            <iframe
-                width="auto"
-                height="auto"
-                src="https://www.youtube.com/embed/3IQF38Icrgw?si=EthKfFau--vgBseL"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
         </div>
     );
 }
