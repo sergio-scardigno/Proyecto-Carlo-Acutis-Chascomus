@@ -76,6 +76,7 @@
         "url": "Novena Carlo Acutis"
     },
     "Footer": {
-        "copyright": "© 2024 Página de destino Carlo Acutis. Todos los derechos reservados."
+        "copyright": "© 2024 Impulsada por Vercel. Todos los derechos reservados.",
+        "portfolio": "Visita mi portfolio"
     }
 }

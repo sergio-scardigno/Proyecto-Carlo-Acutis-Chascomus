@@ -10,11 +10,12 @@
 
 h1 {
     font-family: 'ZapfinoLinotypeOne', sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     color: #be1621;
 }
 
-@media (max-width: 768px) { /* Ajusta el punto de ruptura según tus necesidades */
+@media (max-width: 768px) {
+    /* Ajusta el punto de ruptura según tus necesidades */
     h1 {
         margin-top: 25px;
         font-size: 40px; /* Tamaño de fuente reducido a la mitad */
@@ -44,4 +45,32 @@ h1 {
     padding: 20px;
     border-radius: 8px; /* Opcional: para bordes redondeados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: para añadir sombra */
+}
+
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #ffffff; /* Color del borde */
+    border-radius: 6px; /* Bordes redondeados */
+    text-decoration: none;
+    color: #1a202c; /* Color del texto */
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #f7fafc; /* Color de fondo al pasar el cursor */
+    border-color: #cbd5e0; /* Color del borde al pasar el cursor */
+}
+
+.icon {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.icon img {
+    display: block;
+}
+
+.text-footer-sign {
+    font-size: 10px;
 }
