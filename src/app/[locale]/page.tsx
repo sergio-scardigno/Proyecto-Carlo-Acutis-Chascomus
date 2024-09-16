@@ -73,8 +73,8 @@ export default function Home() {
                 {t('bibliography-intro')}
             </p>
             <iframe
-                width="560"
-                height="315"
+                width="auto"
+                height="auto"
                 src="https://www.youtube.com/embed/3IQF38Icrgw?si=EthKfFau--vgBseL"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
