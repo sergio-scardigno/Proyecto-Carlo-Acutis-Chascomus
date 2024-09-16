@@ -31,6 +31,7 @@ nav a {
     padding: 8px 12px; /* Añade algo de espacio alrededor del enlace */
     transition: color 0.3s ease, border-bottom 0.3s ease; /* Transición suave */
     border-bottom: 2px solid transparent; /* Añade un borde inferior invisible */
+    font-size: 12px;
 }
 
 nav a:hover {
