@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import { NextIntlClientProvider } from 'next-intl';
+import { notFound } from 'next/navigation';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,18 +19,30 @@ interface RootLayoutProps {
         locale: string;
     };
 }
-export default function RootLayout({
+
+export default async function RootLayout({
     children,
     params: { locale },
 }: Readonly<RootLayoutProps>) {
+    let messages;
+    try {
+        // Ajusta la ruta de importación de los mensajes
+        messages = (await import(`../../../messages/${locale}.json`)).default;
+    } catch (error) {
+        // Si no encuentra las traducciones, muestra un 404
+        notFound();
+    }
+
     return (
         <html lang={locale} className="bg-mosaic">
             <body className={inter.className}>
-                <div className="flex flex-col min-h-screen max-w-4xl mx-auto content-body">
-                    <Header />
-                    <div className="flex-grow mt-20">{children}</div>
-                    <Footer />
-                </div>
+                <NextIntlClientProvider locale={locale} messages={messages}>
+                    <div className="flex flex-col min-h-screen max-w-4xl mx-auto content-body">
+                        <Header />
+                        <div className="flex-grow mt-20">{children}</div>
+                        <Footer />
+                    </div>
+                </NextIntlClientProvider>
             </body>
         </html>
     );

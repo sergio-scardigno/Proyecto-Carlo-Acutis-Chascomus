@@ -8,12 +8,72 @@
         "bibliography-intro": "This content has been created by a third party, collecting video clips from the documentary 'La mia autostrada per il Cielo' and various images available on Carlo's official website.",
         "who-is": "Meet Carlos Acutis"
     },
+    "Oracion": {
+        "title": "Novena to Blessed Carlo Acutis",
+        "meditaciones": {
+            "primer_dia": {
+                "titulo": "MEDITATION OF THE FIRST DAY",
+                "cita": "«Not I, but God.»",
+                "oracion": "Blessed Carlo Acutis, who made your life a continuous renunciation and self-emptying...",
+                "agradecimiento": "Pray 5 Our Fathers, 5 Hail Marys, and 5 Glory Be to the Fathers..."
+            },
+            "segundo_dia": {
+                "titulo": "MEDITATION OF THE SECOND DAY",
+                "cita": "«To always be united with Jesus, that is my life program.»",
+                "oracion": "Blessed Carlo Acutis, who always lived united to the Heart of Jesus...",
+                "agradecimiento": "Pray 5 Our Fathers, 5 Hail Marys, and 5 Glory Be to the Fathers..."
+            },
+            "tercer_dia": {
+                "titulo": "MEDITATION OF THE THIRD DAY",
+                "cita": "«Continuously ask for help from your Guardian Angel, for he must become your best friend.»",
+                "oracion": "Blessed Carlo Acutis, who sought the company of the Holy Angels already in this world, grant me the grace to live righteously, as inspired by your Angel. Amen.",
+                "agradecimiento": "Pray 5 Our Fathers, 5 Hail Marys, and 5 Glory Be to the Fathers, in thanksgiving to God for the gifts granted to Carlo in the 15 years of his earthly life."
+            },
+            "cuarto_dia": {
+                "titulo": "MEDITATION OF THE FOURTH DAY",
+                "cita": "«The hot-air balloon: to rise upwards it needs to shed weight, just as the soul must also remove those small weights, venial sins, to rise to Heaven. If by chance there is mortal sin, the soul remains on the ground, and Confession is like the fire that lifts the balloon to Heaven. Frequent Confession is necessary.»",
+                "oracion": "Blessed Carlo Acutis, who lived so well this Sacrament of Reconciliation, grant me the grace to approach confession frequently with deep repentance. Amen.",
+                "agradecimiento": "Pray 5 Our Fathers, 5 Hail Marys, and 5 Glory Be to the Fathers, in thanksgiving to God for the gifts granted to Carlo in the 15 years of his earthly life."
+            },
+            "quinto_dia": {
+                "titulo": "MEDITATION OF THE FIFTH DAY",
+                "cita": "«Sadness is a gaze turned inward; happiness is a gaze turned toward God.»",
+                "oracion": "Blessed Carlo Acutis, who never took your eyes off Jesus, your great love, grant me the grace to live this true happiness already in this world. Amen.",
+                "agradecimiento": "Pray 5 Our Fathers, 5 Hail Marys, and 5 Glory Be to the Fathers, in thanksgiving to God for the gifts granted to Carlo in the 15 years of his earthly life."
+            },
+            "sexto_dia": {
+                "titulo": "MEDITATION OF THE SIXTH DAY",
+                "cita": "«The only thing we should ask God in prayer is the desire to become saints.»",
+                "oracion": "Blessed Carlo Acutis, who always knew to ask God for what is essential, grant me the grace of a deep desire for Heaven. Amen.",
+                "agradecimiento": "Pray 5 Our Fathers, 5 Hail Marys, and 5 Glory Be to the Fathers, in thanksgiving to God for the gifts granted to Carlo in the 15 years of his earthly life."
+            },
+            "septimo_dia": {
+                "titulo": "MEDITATION OF THE SEVENTH DAY",
+                "cita": "«The Virgin is the only woman in my life.»",
+                "oracion": "Blessed Carlo Acutis, who loved the Virgin Mary more than anyone else, grant me the grace to always respond to the love of this sweet and good Mother. Amen.",
+                "agradecimiento": "Pray 5 Our Fathers, 5 Hail Marys, and 5 Glory Be to the Fathers, in thanksgiving to God for the gifts granted to Carlo in the 15 years of his earthly life."
+            },
+            "octavo_dia": {
+                "titulo": "MEDITATION OF THE EIGHTH DAY",
+                "cita": "«The Eucharist is my highway to Heaven.»",
+                "oracion": "Blessed Carlo Acutis, who always sought your hidden Jesus in the Tabernacle, grant me the grace of a deep Eucharistic fervor. Amen.",
+                "agradecimiento": "Pray 5 Our Fathers, 5 Hail Marys, and 5 Glory Be to the Fathers, in thanksgiving to God for the gifts granted to Carlo in the 15 years of his earthly life."
+            },
+            "noveno_dia": {
+                "titulo": "MEDITATION OF THE NINTH DAY",
+                "cita": "«I die peacefully because I have not lived even one minute of my life in things that do not please God.»",
+                "oracion": "Blessed Carlo Acutis, grant me the grace of all graces, that is, final perseverance and a holy death. Amen.",
+                "agradecimiento": "Pray 5 Our Fathers, 5 Hail Marys, and 5 Glory Be to the Fathers, in thanksgiving to God for the gifts granted to Carlo in the 15 years of his earthly life."
+            }
+        }
+    },
     "NotFoundPage": {
         "title": "Page Not Found",
         "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
     },
     "Navigation": {
-        "home": "Home"
+        "home": "Home",
+        "url": "Novena Carlo Acutis"
     },
     "Footer": {
         "copyright": "© 2024 Landing page Carlo Acutis. All rights reserved."

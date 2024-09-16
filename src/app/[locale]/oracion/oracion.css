@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+    font-family: 'ZapfinoLinotypeOne';
+    src: url('/fonts/ZapfinoLinotypeOne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'ZapfinoLinotypeOne', sans-serif;
+    font-size: 80px;
+    color: #be1621;
+}
+
+@tailwind utilities;
+
+.hero {
+    margin-top: -100px;
+    z-index: -3;
+}
+
+/* Aplica el fondo en mosaico al contenedor exterior */
+.bg-mosaic {
+    background-image: url('/img/splash_bkg_01.jpg'); /* Ajusta la ruta según donde hayas colocado la imagen */
+    background-repeat: repeat;
+    background-size: auto; /* Para mantener el tamaño original de la imagen en el mosaico */
+    min-height: 100vh; /* Asegura que cubra al menos toda la altura de la ventana */
+    padding: 20px; /* Añade padding si es necesario para separar el contenido del borde */
+}
+
+/* Establece el fondo blanco para el cuerpo del contenido */
+.content-body {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px; /* Opcional: para bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: para añadir sombra */
+}

@@ -12,3 +12,7 @@ export const config = {
     // Match only internationalized pathnames
     matcher: ['/', '/(en|es)/:path*'],
 };
+
+// export const config = {
+//     matcher: ['/((?!_next|favicon.ico).*)'],
+// };

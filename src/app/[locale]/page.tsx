@@ -25,9 +25,13 @@ export default function Home() {
             <p className="text-center text-base mb-4 mt-4">
                 {t('bibliography-intro')}
             </p>
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/3IQF38Icrgw?si=EthKfFau--vgBseL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-
-
+            <iframe
+                width="auto"
+                height="auto"
+                src="https://www.youtube.com/embed/3IQF38Icrgw?si=EthKfFau--vgBseL"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
 
             {/* Separador */}
             <hr className="w-full border-t border-gray-300 my-4" />
@@ -39,16 +43,18 @@ export default function Home() {
                 className="rounded-lg shadow-lg"
             />
 
-
             <hr className="w-full border-t border-gray-300 my-4" />
             <p className="text-center text-2xl font-semibold mt-4">
                 {t('who-is')}
-                
             </p>
-            
 
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/9UHes5e8gU4?si=hMZkB-VvdZ9aWXy5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-
+            <iframe
+                width="auto"
+                height="auto"
+                src="https://www.youtube.com/embed/9UHes5e8gU4?si=hMZkB-VvdZ9aWXy5"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
 
             <hr className="w-full border-t border-gray-300 my-4" />
             <p className="text-center text-2xl font-semibold mt-4">
@@ -63,6 +69,16 @@ export default function Home() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
             <hr className="w-full border-t border-gray-300 my-4" />
+            <p className="text-center text-base mb-4 mt-4">
+                {t('bibliography-intro')}
+            </p>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/3IQF38Icrgw?si=EthKfFau--vgBseL"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
         </div>
     );
 }

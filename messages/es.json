@@ -8,12 +8,72 @@
         "bibliography-intro": "Este contenido ha sido elaborado por un tercero, recopilando fragmentos de video del documental 'La mia autostrada per il Cielo' y varias imágenes disponibles en la página oficial de Carlo.",
         "who-is": "Conoce a Carlos Acutis"
     },
+    "Oracion": {
+        "title": "Novena al Beato Carlo Acutis",
+        "meditaciones": {
+            "primer_dia": {
+                "titulo": "MEDITACIÓN DEL PRIMER DÍA",
+                "cita": "«No yo, sino Dios.»",
+                "oracion": "Beato Carlo Acutis, que has hecho de tu vida una continua renuncia y anonadamiento...",
+                "agradecimiento": "Se rezan 5 Padrenuestros, 5 Ave Marías y 5 Gloria al Padre..."
+            },
+            "segundo_dia": {
+                "titulo": "MEDITACIÓN DEL SEGUNDO DÍA",
+                "cita": "«Estar siempre unido a Jesús, he aquí mi programa de vida.»",
+                "oracion": "Beato Carlo Acutis, que has vivido siempre unido al Corazón de Jesús...",
+                "agradecimiento": "Se rezan 5 Padrenuestros, 5 Ave Marías y 5 Gloria al Padre..."
+            },
+            "tercer_dia": {
+                "titulo": "MEDITACIÓN DEL TERCER DÍA",
+                "cita": "«Pide continuamente ayuda a tu Ángel de la guarda, pues él tiene que llegar a ser tu mejor amigo.»",
+                "oracion": "Beato Carlo Acutis, que has buscado, ya en este mundo, la compañía de los Santos Ángeles, alcánzame la gracia de vivir con rectitud, como te lo inspiró tu Ángel. Amén.",
+                "agradecimiento": "Se rezan 5 Padrenuestros, 5 Ave Marías y 5 Gloria al Padre, en acción de gracias a Dios por los dones concedidos a Carlo en los 15 años de su vida terrena."
+            },
+            "cuarto_dia": {
+                "titulo": "MEDITACIÓN DEL CUARTO DÍA",
+                "cita": "«El globo aerostático: para subir hacia lo alto necesita descargar peso, así como el alma para elevarse al Cielo necesita quitar también aquellos pequeños pesos que son los pecados veniales. Si por casualidad hay un pecado mortal el alma se queda al piso, y la Confesión es como el fuego que hace subir al Cielo el globo aerostático. Es necesario confesarse con frecuencia.»",
+                "oracion": "Beato Carlo Acutis, que has vivido tan bien este Sacramento de la Reconciliación, alcánzame la gracia de acercarme con frecuencia a la confesión con un arrepentimiento profundo. Amén.",
+                "agradecimiento": "Se rezan 5 Padrenuestros, 5 Ave Marías y 5 Gloria al Padre, en acción de gracias a Dios por los dones concedidos a Carlo en los 15 años de su vida terrena."
+            },
+            "quinto_dia": {
+                "titulo": "MEDITACIÓN DEL QUINTO  DÍA",
+                "cita": "«La tristeza es la mirada orientada a nosotros mismos, la felicidad es la mirada orientada a Dios.»",
+                "oracion": "Beato Carlo Acutis, que nunca has apartado la mirada de Jesús, tu gran amor, alcánzame la gracia de vivir ya en este mundo esta felicidad auténtica. Amén.",
+                "agradecimiento": "Se rezan 5 Padrenuestros, 5 Ave Marías y 5 Gloria al Padre, en acción de gracias a Dios por los dones concedidos a Carlo en los 15 años de su vida terrena."
+            },
+            "sexto_dia": {
+                "titulo": "MEDITACIÓN DEL SEXTO  DÍA",
+                "cita": "«Lo único que debemos pedir a Dios en la oración es el deseo de llegar a ser santos.»",
+                "oracion": "Beato Carlo Acutis, que siempre has sabido pedir a Dios lo esencial, alcánzame la gracia de un profundo deseo del Cielo. Amén.",
+                "agradecimiento": "Se rezan 5 Padrenuestros, 5 Ave Marías y 5 Gloria al Padre, en acción de gracias a Dios por los dones concedidos a Carlo en los 15 años de su vida terrena."
+            },
+            "septimo_dia": {
+                "titulo": "MEDITACIÓN DEL SÉPTIMO DÍA",
+                "cita": "«La Virgen es la única mujer de mi vida.»",
+                "oracion": "Beato Carlo Acutis, que has amado a la Virgen María más que a nadie, alcánzame la gracia de responder siempre al amor de esta Madre tan dulce y tan buena. Amén.",
+                "agradecimiento": "Se rezan 5 Padrenuestros, 5 Ave Marías y 5 Gloria al Padre, en acción de gracias a Dios por los dones concedidos a Carlo en los 15 años de su vida terrena."
+            },
+            "octavo_dia": {
+                "titulo": "MEDITACIÓN DEL OCTAVO DÍA",
+                "cita": "«La Eucaristía es mi autopista hacia el Cielo.»",
+                "oracion": "Beato Carlo Acutis, que buscabas siempre a tu Jesús oculto en el Sagrario, alcánzame la gracia de un profundo fervor eucarístico. Amén.",
+                "agradecimiento": "Se rezan 5 Padrenuestros, 5 Ave Marías y 5 Gloria al Padre, en acción de gracias a Dios por los dones concedidos a Carlo en los 15 años de su vida terrena."
+            },
+            "noveno_dia": {
+                "titulo": "MEDITACIÓN DEL NOVENO DÍA",
+                "cita": "«Muero sereno, porque no he vivido ni siquiera un minuto de mi vida en cosas que no agradan a Dios.»",
+                "oracion": "Beato Carlo Acutis, alcánzame la gracia de las gracias, o sea la perseverancia final y una muerte santa. Amén.",
+                "agradecimiento": "Se rezan 5 Padrenuestros, 5 Ave Marías y 5 Gloria al Padre, en acción de gracias a Dios por los dones concedidos a Carlo en los 15 años de su vida terrena."
+            }
+        }
+    },
     "NotFoundPage": {
         "title": "Page Not Found",
         "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
     },
     "Navigation": {
-        "home": "Inicio"
+        "home": "Inicio",
+        "url": "Novena Carlo Acutis"
     },
     "Footer": {
         "copyright": "© 2024 Página de destino Carlo Acutis. Todos los derechos reservados."
