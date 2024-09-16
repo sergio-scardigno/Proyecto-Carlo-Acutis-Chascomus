@@ -26,7 +26,7 @@ h1 {
 @tailwind utilities;
 
 nav a {
-    color: #940014; /* Color del texto del enlace */
+    color: #1d1d1d; /* Color del texto del enlace */
     text-decoration: none; /* Remueve el subrayado por defecto */
     padding: 8px 12px; /* Añade algo de espacio alrededor del enlace */
     transition: color 0.3s ease, border-bottom 0.3s ease; /* Transición suave */
