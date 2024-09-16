@@ -19,7 +19,7 @@ export default function Oracion() {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-6 hero">
-            <h1 className="mb-8 font-semibold text-center font-zapfino text-2xl">
+            <h1 className="mb-8 font-semibold text-center font-zapfino text-6xl">
                 {t('title')}
             </h1>
 
