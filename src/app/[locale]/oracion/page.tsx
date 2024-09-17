@@ -40,13 +40,13 @@ export default function Oracion() {
             {dias.map((dia, index) => (
                 <div
                     key={index}
-                    className="w-full max-w-2xl mb-8 p-6 border border-gray-300 rounded-lg shadow-lg flex items-center" // Añadido "flex" para alinear texto e imagen
+                    className="w-full max-w-2xl mb-8 p-6 border border-gray-300 rounded-lg shadow-lg flex flex-col md:flex-row items-center" // Cambiamos el layout en pantallas pequeñas
                 >
-                    {/* Imagen al lado del texto */}
+                    {/* Imagen al lado del texto en pantallas grandes, arriba en pantallas pequeñas */}
                     <img
                         src={imagenes[index]}
                         alt={t(`meditaciones.${dia}.titulo`)}
-                        className="w-1/3 h-auto mr-4 rounded-lg" // Ajusta el tamaño de la imagen
+                        className="w-full md:w-1/3 h-auto mb-4 md:mb-0 md:mr-4 rounded-lg" // Ajustamos el tamaño y el margen según el tamaño de pantalla
                     />
 
                     <div className="flex-grow">
