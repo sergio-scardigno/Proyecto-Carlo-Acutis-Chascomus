@@ -27,7 +27,9 @@ export default function Header() {
                     {t('url')}
                 </Link>
                 {/* Componente para cambiar de idioma */}
-
+                <Link href={`/${locale}/videos`} className="nav-link">
+                    {t('videos')}
+                </Link>
                 <div className="ml-auto">
                     <LocalSwitcher />
                 </div>

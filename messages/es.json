@@ -72,8 +72,15 @@
         "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
     },
     "Navigation": {
+        "home": "Home",
+        "url": "Novena",
+        "videos": "Videos"
+    },
+    "Videos": {
         "home": "Inicio",
-        "url": "Novena"
+        "title": "Videos",
+        "video1": "Las enseñanzas que deja la vida de Carlo Acutis",
+        "video2": "Video 2"
     },
     "Footer": {
         "copyright": "© 2024 Impulsada por Vercel. Todos los derechos reservados.",

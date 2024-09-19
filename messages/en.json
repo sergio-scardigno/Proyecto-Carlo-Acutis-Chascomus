@@ -73,7 +73,14 @@
     },
     "Navigation": {
         "home": "Home",
-        "url": "Novena"
+        "url": "Novena",
+        "videos": "Videos"
+    },
+    "Videos": {
+        "home": "Inicio",
+        "title": "Videos",
+        "video1": "The lessons from the life of Carlo Acutis",
+        "video2": "Video 2"
     },
     "Footer": {
         "copyright": "© 2024 Powered by Vercel. All rights reserved.",
