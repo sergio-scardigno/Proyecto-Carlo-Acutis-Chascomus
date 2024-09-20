@@ -91,3 +91,23 @@ nav a:hover {
 .text-footer-sign {
     font-size: 10px;
 }
+
+.rc-card-title {
+    color: #be1621 !important; /* Rojo personalizado */
+    padding-top: 10px;
+}
+
+/* Ocultar el botón "Jump to" */
+.SelecterLabel-sc-168kw5q-4.fVncYp {
+    display: none;
+}
+
+/* Ocultar el botón "Change layout" */
+.SelecterLabel-sc-168kw5q-4.fVncYp {
+    display: none;
+}
+
+/* Ocultar el botón "Change density" */
+.SelecterLabel-sc-168kw5q-4.fVncYp {
+    display: none;
+}

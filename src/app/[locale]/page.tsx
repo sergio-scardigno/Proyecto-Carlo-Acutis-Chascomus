@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import './globals.css';
+import Timeline from '../../components/timeline-carlo-acutis';
 
 export default function Home() {
     const t = useTranslations('IndexPage');
@@ -20,6 +21,13 @@ export default function Home() {
                 alt="Picture of the author"
                 className="rounded-lg shadow-lg"
             />
+
+            <hr className="w-full border-t border-gray-300 my-4" />
+            {/* Aquí es donde integramos el componente Timeline */}
+            <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+                <p className="text-center mt-4 mb-4">{t('ceremony')}</p>
+            </div>
+            <Timeline />
 
             <hr className="w-full border-t border-gray-300 my-4" />
             <p className="text-center text-base mb-4 mt-4">
