@@ -83,6 +83,32 @@
         "video1": "The lessons from the life of Carlo Acutis",
         "video2": "Video 2"
     },
+    "Ceremony": {
+        "event1": {
+            "title": "October 10, 6:00 PM",
+            "cardTitle": "Ceremony at Fibra TV",
+            "cardSubtitle": "Event starts at Fibra TV, Belgrano and Soler street",
+            "cardDetailedText": "At the Fibra TV location, the image of Blessed Carlo Acutis will be placed, brought from Assisi, Italy, from the Parish of Santa Maria la Mayor."
+        },
+        "event2": {
+            "title": "October 10, 6:15 PM",
+            "cardTitle": "Blessing of the image",
+            "cardSubtitle": "Performed by Bishop Mons. Juan Ignacio Liébana",
+            "cardDetailedText": "The image will be blessed by the diocesan bishop, and the Carlo Acutis free Wi-Fi point will be inaugurated at the location."
+        },
+        "event3": {
+            "title": "October 10, 6:45 PM",
+            "cardTitle": "Procession to the Cathedral",
+            "cardSubtitle": "Procession to the \"Nuestra Señora de la Merced\" Cathedral",
+            "cardDetailedText": "Attendees will join a procession from the corner of Belgrano and Soler streets to the Cathedral, accompanying another image of the Blessed."
+        },
+        "event4": {
+            "title": "October 10, 7:30 PM",
+            "cardTitle": "Holy Mass at the Cathedral",
+            "cardSubtitle": "\"Nuestra Señora de la Merced\" Cathedral",
+            "cardDetailedText": "Upon arriving at the Cathedral, a Holy Mass will be celebrated in honor of Carlo Acutis, who passed away on October 10, 2016, at the age of 15."
+        }
+    },
     "Footer": {
         "copyright": "© 2024 Powered by Vercel. All rights reserved.",
         "portfolio": ""

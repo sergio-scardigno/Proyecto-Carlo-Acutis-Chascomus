@@ -83,6 +83,32 @@
         "video1": "Las enseñanzas que deja la vida de Carlo Acutis",
         "video2": "Video 2"
     },
+    "Ceremony": {
+        "event1": {
+            "title": "10 de octubre, 18:00",
+            "cardTitle": "Ceremonia en Fibra TV",
+            "cardSubtitle": "Inicio del evento en Fibra TV, calle Belgrano y Soler",
+            "cardDetailedText": "En el local de Fibra TV se colocará la imagen del Beato Carlo Acutis, traída desde Asís, Italia, desde la Parroquia de Santa María la Mayor."
+        },
+        "event2": {
+            "title": "10 de octubre, 18:15",
+            "cardTitle": "Bendición de la imagen",
+            "cardSubtitle": "Realizada por el Obispo Mons. Juan Ignacio Liébana",
+            "cardDetailedText": "La imagen será bendecida por el Obispo diocesano y quedará inaugurado el punto de wi-fi gratuito Carlo Acutis en el lugar."
+        },
+        "event3": {
+            "title": "10 de octubre, 18:45",
+            "cardTitle": "Procesión hacia la Catedral",
+            "cardSubtitle": "Recorrido hasta la Iglesia Catedral \"Nuestra Señora de la Merced\"",
+            "cardDetailedText": "Los presentes realizarán una procesión desde la esquina de Belgrano y Soler hasta la Catedral, acompañando otra imagen del beato."
+        },
+        "event4": {
+            "title": "10 de octubre, 19:30",
+            "cardTitle": "Santa Misa en la Catedral",
+            "cardSubtitle": "Iglesia Catedral \"Nuestra Señora de la Merced\"",
+            "cardDetailedText": "Al llegar a la Catedral, se celebrará la Santa Misa en honor a Carlo Acutis, quien falleció el 10 de octubre de 2016 a los 15 años."
+        }
+    },
     "Footer": {
         "copyright": "© 2024 Impulsada por Vercel. Todos los derechos reservados.",
         "portfolio": ""
