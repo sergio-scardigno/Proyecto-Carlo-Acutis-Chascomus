@@ -1,7 +1,10 @@
 'use client';
 import { useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 
 const Testimonios = () => {
+    const t = useTranslations('Testimonios'); // 'Oracion' debe coincidir con el namespace en es.json
+
     useEffect(() => {
         // Limpia cualquier instancia anterior de GraphComment
         const existingGraphComment = document.getElementById('graphcomment');
@@ -54,11 +57,18 @@ const Testimonios = () => {
     }, []);
 
     return (
-        <div>
-            <h1 className="mb-8 font-semibold text-center font-zapfino text-6xl title-testimonios">
-                Testimonios
+        <div className="container mx-auto px-4 py-8">
+            <h1 className="mb-8 font-semibold text-center text-4xl lg:text-5xl font-zapfino title-testimonios">
+                {t('title')}
             </h1>
-            <div id="graphcomment" className=""></div>
+
+            <div className="max-w-prose mx-auto mb-8">
+                <p className="mb-4 text-lg md:text-xl">{t('intro')}</p>
+                <p className="mb-4 text-lg md:text-xl">{t('intro2')}</p>
+                <p className="mb-4 text-lg md:text-xl">{t('intro3')}</p>
+            </div>
+
+            <div id="graphcomment" className="max-w-full"></div>
         </div>
     );
 };

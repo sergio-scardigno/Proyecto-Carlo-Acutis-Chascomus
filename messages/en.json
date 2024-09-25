@@ -85,7 +85,10 @@
         "video2": "Video 2"
     },
     "Testimonios": {
-        "url": "testimonio"
+        "title": "Share your Testimony with Blessed Carlo Acutis",
+        "intro": "In this section, we invite you to share your personal experience with Blessed Carlo Acutis. We want to hear how his life and example of faith have impacted yours. If you have received special graces, spiritual comfort, or if you simply wish to express your admiration for this young saint, this is the place to do it.",
+        "intro2": "Leave your testimony and share how Carlo Acutis has touched your life, so that others can find inspiration and strength through your experience. Your testimony can be a light for others!",
+        "intro3": "We invite you to participate and be part of this community of faith."
     },
     "Ceremony": {
         "event1": {
