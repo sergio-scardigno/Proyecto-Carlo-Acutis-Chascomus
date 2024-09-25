@@ -55,8 +55,10 @@ const Testimonios = () => {
 
     return (
         <div>
-            <h1>Testimonios</h1>
-            <div id="graphcomment"></div>
+            <h1 className="mb-8 font-semibold text-center font-zapfino text-6xl title-testimonios">
+                Testimonios
+            </h1>
+            <div id="graphcomment" className=""></div>
         </div>
     );
 };
