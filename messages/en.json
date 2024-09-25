@@ -75,13 +75,17 @@
     "Navigation": {
         "home": "Home",
         "url": "Novena",
-        "videos": "Videos"
+        "videos": "Videos",
+        "testimonios": "Testimonios"
     },
     "Videos": {
         "home": "Inicio",
         "title": "Videos",
         "video1": "The lessons from the life of Carlo Acutis",
         "video2": "Video 2"
+    },
+    "Testimonios": {
+        "url": "testimonio"
     },
     "Ceremony": {
         "event1": {

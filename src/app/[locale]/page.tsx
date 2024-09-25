@@ -1,10 +1,19 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import './globals.css';
 import Timeline from '../../components/timeline-carlo-acutis';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
     const t = useTranslations('IndexPage');
+
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-4 hero">
@@ -12,7 +21,6 @@ export default function Home() {
                 {t('title')}
             </h1>
             <p className="text-center mb-4">{t('description')}</p>
-            {/* Separador */}
             <hr className="w-full border-t border-gray-300 my-4" />
             <Image
                 src="/img/carlo-acutis.webp"
@@ -23,7 +31,6 @@ export default function Home() {
             />
 
             <hr className="w-full border-t border-gray-300 my-4" />
-            {/* Aquí es donde integramos el componente Timeline */}
             <div style={{ maxWidth: '600px', margin: '0 auto' }}>
                 <p className="text-center mt-4 mb-4">{t('ceremony')}</p>
             </div>
@@ -41,7 +48,6 @@ export default function Home() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
 
-            {/* Separador */}
             <hr className="w-full border-t border-gray-300 my-4" />
             <Image
                 src="/img/folleto.webp"

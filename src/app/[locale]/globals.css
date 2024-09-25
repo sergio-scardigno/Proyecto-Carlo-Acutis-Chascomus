@@ -111,3 +111,12 @@ nav a:hover {
 .SelecterLabel-sc-168kw5q-4.fVncYp {
     display: none;
 }
+
+/* globals.css o un archivo específico para el componente */
+.disqus-container {
+    width: 100%; /* Puedes ajustar este valor */
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor */
+    background-color: white;
+}
