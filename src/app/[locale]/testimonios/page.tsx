@@ -104,7 +104,7 @@ const Testimonios = () => {
         };
 
         // Esperar un breve tiempo para que el widget se cargue completamente antes de hacer el cambio
-        setTimeout(modifyCommentTabs, 3000); // Ajusta el tiempo si es necesario (aumentado a 1000ms)
+        setTimeout(modifyCommentTabs, 1000); // Ajusta el tiempo si es necesario (aumentado a 1000ms)
     }, []);
 
     return (
