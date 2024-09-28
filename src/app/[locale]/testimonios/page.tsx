@@ -29,25 +29,29 @@ const Testimonios = () => {
 
             // Inicializa el widget una vez que el script se haya cargado
             scriptWidget.onload = () => {
-                graphcommentWidget(
-                    document.getElementById('graphcomment-widget'),
-                    {
-                        graphcomment_id: 'Carlo-Acutis',
-                        defaultTab: 'last_comments',
-                        tabs: ['last_comments', 'top_comments'],
-                        labels: {
-                            last_comments: '',
-                            top_comments: '',
-                            top_threads: '',
-                        },
-                        period: '90 days',
-                        limit: 25,
-                        height: null,
-                        openLinksNewWindow: true,
-                        showVotes: true,
-                        locale: 'es',
-                    }
-                );
+                if (window.graphcommentWidget) {
+                    window.graphcommentWidget(
+                        document.getElementById('graphcomment-widget'),
+                        {
+                            graphcomment_id: 'Carlo-Acutis',
+                            defaultTab: 'last_comments',
+                            tabs: ['last_comments', 'top_comments'],
+                            labels: {
+                                last_comments: '',
+                                top_comments: '',
+                                top_threads: '',
+                            },
+                            period: '90 days',
+                            limit: 25,
+                            height: null,
+                            openLinksNewWindow: true,
+                            showVotes: true,
+                            locale: 'es',
+                        }
+                    );
+                } else {
+                    console.error('GraphComment widget not found.');
+                }
             };
 
             document.body.appendChild(scriptWidget); // Añade el script al body
@@ -100,7 +104,7 @@ const Testimonios = () => {
         };
 
         // Esperar un breve tiempo para que el widget se cargue completamente antes de hacer el cambio
-        setTimeout(modifyCommentTabs, 1000); // Ajusta el tiempo si es necesario (aumentado a 1000ms)
+        setTimeout(modifyCommentTabs, 3000); // Ajusta el tiempo si es necesario (aumentado a 1000ms)
     }, []);
 
     return (
