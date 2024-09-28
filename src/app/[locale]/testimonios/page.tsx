@@ -29,28 +29,29 @@ const Testimonios = () => {
 
             // Inicializa el widget una vez que el script se haya cargado
             scriptWidget.onload = () => {
-                if (window.graphcommentWidget) {
-                    window.graphcommentWidget(
-                        document.getElementById('graphcomment-widget'),
-                        {
-                            graphcomment_id: 'Carlo-Acutis',
-                            defaultTab: 'last_comments',
-                            tabs: ['last_comments', 'top_comments'],
-                            labels: {
-                                last_comments: '',
-                                top_comments: '',
-                                top_threads: '',
-                            },
-                            period: '90 days',
-                            limit: 25,
-                            height: null,
-                            openLinksNewWindow: true,
-                            showVotes: true,
-                            locale: 'es',
-                        }
-                    );
+                const widgetElement = document.getElementById(
+                    'graphcomment-widget'
+                );
+
+                if (window.graphcommentWidget && widgetElement) {
+                    window.graphcommentWidget(widgetElement, {
+                        graphcomment_id: 'Carlo-Acutis',
+                        defaultTab: 'last_comments',
+                        tabs: ['last_comments', 'top_comments'],
+                        labels: {
+                            last_comments: '',
+                            top_comments: '',
+                            top_threads: '',
+                        },
+                        period: '90 days',
+                        limit: 25,
+                        height: null,
+                        openLinksNewWindow: true,
+                        showVotes: true,
+                        locale: 'es',
+                    });
                 } else {
-                    console.error('GraphComment widget not found.');
+                    console.error('GraphComment widget or element not found.');
                 }
             };
 
