@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
+import Head from 'next/head';
 
 const Testimonios = () => {
     const t = useTranslations('Testimonios'); // 'Testimonios' debe coincidir con el namespace en es.json
@@ -109,23 +110,64 @@ const Testimonios = () => {
     }, []);
 
     return (
-        <div className="container mx-auto px-4 py-8">
-            <h1 className="mb-8 font-semibold text-center text-4xl lg:text-5xl font-zapfino title-testimonios">
-                {t('title')}
-            </h1>
+        <>
+            <Head>
+                <title>
+                    Testimonios sobre Carlo Acutis - Devoción en Chascomús
+                </title>
+                <meta
+                    name="description"
+                    content="Lee los testimonios de fe y devoción de personas impactadas por Carlo Acutis en Chascomús. Comparte tu experiencia y participa en la comunidad."
+                />
+                <meta
+                    name="keywords"
+                    content="Testimonios, Carlo Acutis, Fe, Devoción, Comunidad, Chascomús"
+                />
+                <meta name="author" content="Tu Nombre" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1"
+                />
+                <meta
+                    property="og:title"
+                    content="Testimonios sobre Carlo Acutis - Devoción en Chascomús"
+                />
+                <meta
+                    property="og:description"
+                    content="Conoce los testimonios de aquellos que han sido inspirados por Carlo Acutis y su legado espiritual en Chascomús. Únete a la conversación."
+                />
+                <meta
+                    property="og:image"
+                    content="/img/carlo-acutis-testimonios.webp"
+                />
+                <meta
+                    property="og:url"
+                    content="https://www.carloacutis.net.ar/testimonios"
+                />
+                <meta name="twitter:card" content="summary_large_image" />
+                <link
+                    rel="canonical"
+                    href="https://www.carloacutis.net.ar/testimonios"
+                />
+            </Head>
+            <div className="container mx-auto px-4 py-8">
+                <h1 className="mb-8 font-semibold text-center text-4xl lg:text-5xl font-zapfino title-testimonios">
+                    {t('title')}
+                </h1>
 
-            <div className="max-w-prose mx-auto mb-8">
-                <p className="mb-4 text-lg md:text-xl">{t('intro')}</p>
-                <p className="mb-4 text-lg md:text-xl">{t('intro2')}</p>
-                <p className="mb-4 text-lg md:text-xl">{t('intro3')}</p>
+                <div className="max-w-prose mx-auto mb-8">
+                    <p className="mb-4 text-lg md:text-xl">{t('intro')}</p>
+                    <p className="mb-4 text-lg md:text-xl">{t('intro2')}</p>
+                    <p className="mb-4 text-lg md:text-xl">{t('intro3')}</p>
+                </div>
+
+                {/* Widget de GraphComment */}
+                <div id="graphcomment-widget" className="max-w-full mb-8"></div>
+
+                {/* Caja de comentarios personalizada */}
+                <div id="graphcomment" className="max-w-full"></div>
             </div>
-
-            {/* Widget de GraphComment */}
-            <div id="graphcomment-widget" className="max-w-full mb-8"></div>
-
-            {/* Caja de comentarios personalizada */}
-            <div id="graphcomment" className="max-w-full"></div>
-        </div>
+        </>
     );
 };
 
