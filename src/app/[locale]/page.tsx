@@ -80,6 +80,24 @@ export default function Home() {
                 <Timeline />
 
                 <hr className="w-full border-t border-gray-300 my-4" />
+                <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+                    <h2 className="font-semibold text-center mt-4 mb-4">
+                        {t('monsenor')}
+                    </h2>
+                    <p className="text-center mt-4 mb-4 text-justify">
+                        {t('description2')}
+                    </p>
+                </div>
+                <iframe
+                    className="w-full"
+                    height={500}
+                    src="https://www.youtube.com/embed/IpkpJDSHfTg?si=JHq-gc4QOnvrosm0"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+
+                <hr className="w-full border-t border-gray-300 my-4" />
+
                 <Image
                     src="/img/folleto.webp"
                     width={500}
