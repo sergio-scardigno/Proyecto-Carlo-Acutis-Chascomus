@@ -7,7 +7,6 @@ export default function RootPage() {
             <Head>
                 <meta name="robots" content="noindex" />
             </Head>
-            {redirect('/en')}
         </>
     );
 }
