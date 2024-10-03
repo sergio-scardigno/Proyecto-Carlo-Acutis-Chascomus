@@ -7,7 +7,10 @@ export default function RootPage() {
     const router = useRouter();
 
     useEffect(() => {
-        const userLang = navigator.language || navigator.userLanguage; // Usa 'language' en lugar de 'userLanguage'
+        // Solo usa 'language'
+        const userLang = navigator.language; // Eliminar 'userLanguage'
+
+        // Redirige basado en el idioma
         if (userLang.startsWith('en')) {
             router.push('/en'); // Redirigir a la versión en inglés
         } else {
