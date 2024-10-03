@@ -5,16 +5,19 @@ import Image from 'next/image';
 import './globals.css';
 import Timeline from '../../components/timeline-carlo-acutis';
 import { useEffect, useState } from 'react';
-import Head from 'next/head'; // Importar Head
+import Head from 'next/head';
 
 export default function Home() {
     const t = useTranslations('IndexPage');
-
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
-        setIsClient(true);
+        setIsClient(true); // Asegurarte de que el componente se ha montado en el cliente
     }, []);
+
+    if (!isClient) {
+        return <div>Cargando...</div>; // O cualquier mensaje de carga
+    }
 
     return (
         <>
@@ -59,11 +62,12 @@ export default function Home() {
                 </h1>
                 <p className="text-center mb-4">{t('description')}</p>
                 <hr className="w-full border-t border-gray-300 my-4" />
+
                 <Image
                     src="/img/carlo-acutis.webp"
                     width={500}
                     height={500}
-                    alt="Picture of the author"
+                    alt="Picture of Carlo Acutis"
                     className="rounded-lg shadow-lg"
                 />
 
@@ -73,7 +77,7 @@ export default function Home() {
                     src="/img/entronacion.jpg"
                     width={500}
                     height={500}
-                    alt="Picture of the author"
+                    alt="Picture of the ceremony"
                     className="rounded-lg shadow-lg"
                 />
 
@@ -105,7 +109,7 @@ export default function Home() {
                     src="/img/folleto.webp"
                     width={500}
                     height={500}
-                    alt="Picture of the author"
+                    alt="Picture of the brochure"
                     className="rounded-lg shadow-lg"
                 />
 
