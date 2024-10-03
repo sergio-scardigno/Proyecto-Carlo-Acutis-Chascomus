@@ -16,6 +16,10 @@ export default function RootPage() {
         } else {
             router.push('/es'); // Redirigir a la versión en español
         }
+
+        if (typeof window !== 'undefined') {
+            // Your client-side code that uses window goes here
+        }
     }, [router]);
 
     return <div>Cargando...</div>; // Mensaje de carga
