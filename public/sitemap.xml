@@ -1,14 +1,50 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://carloacutis.net.ar/es</loc>
+    <loc>https://carloacutis.net.ar</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://carloacutis.net.ar/es"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://carloacutis.net.ar/de"/>
     <lastmod>2023-04-06T15:02:24.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
   </url>
   <url>
-    <loc>https://carloacutis.net.ar/es/testimonios</loc>
+    <loc>https://carloacutis.net.ar/testimonios</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://carloacutis.net.ar/es/testimonios"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://carloacutis.net.ar/de/testimonios"/>
     <lastmod>2023-04-06T15:02:24.021Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carloacutis.net.ar/oracion</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://carloacutis.net.ar/es/oracion"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://carloacutis.net.ar/de/oracion"/>
+    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
+  </url>
+    <url>
+    <loc>https://carloacutis.net.ar/videos</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://carloacutis.net.ar/es/videos"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://carloacutis.net.ar/de/videos"/>
+    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
   </url>
 </urlset>
