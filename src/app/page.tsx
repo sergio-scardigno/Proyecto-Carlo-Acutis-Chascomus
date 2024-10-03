@@ -10,15 +10,13 @@ export default function RootPage() {
         // Solo usa 'language'
         const userLang = navigator.language; // Eliminar 'userLanguage'
 
-        // Redirige basado en el idioma
-        if (userLang.startsWith('en')) {
-            router.push('/en'); // Redirigir a la versión en inglés
-        } else {
-            router.push('/es'); // Redirigir a la versión en español
-        }
-
         if (typeof window !== 'undefined') {
-            // Your client-side code that uses window goes here
+            // Redirige basado en el idioma
+            if (userLang.startsWith('en')) {
+                router.push('/en'); // Redirigir a la versión en inglés
+            } else {
+                router.push('/es'); // Redirigir a la versión en español
+            }
         }
     }, [router]);
 
