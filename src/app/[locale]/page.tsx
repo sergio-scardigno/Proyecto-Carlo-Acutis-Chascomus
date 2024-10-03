@@ -28,7 +28,7 @@ export default function Home() {
                     name="keywords"
                     content="Carlo Acutis, Beato, Iglesia, Carlo Acutis Chascomús, Vida de Santos, Devoción, Testimonio de Fe"
                 />
-                <meta name="author" content="Tu Nombre" />
+                <meta name="author" content="Sergio" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1"
@@ -44,10 +44,13 @@ export default function Home() {
                 <meta property="og:image" content="/img/carlo-acutis.webp" />
                 <meta
                     property="og:url"
-                    content="https://www.carloacutis.net.ar"
+                    content="https://www.carloacutis.net.ar/es/"
                 />
                 <meta name="twitter:card" content="summary_large_image" />
-                <link rel="canonical" href="https://www.carloacutis.net.ar" />
+                <link
+                    rel="canonical"
+                    href="https://www.carloacutis.net.ar/es"
+                />
             </Head>
 
             <div className="flex flex-col items-center justify-center min-h-screen p-4 hero">
