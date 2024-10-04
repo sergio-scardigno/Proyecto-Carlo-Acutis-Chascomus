@@ -11,7 +11,7 @@ export default function RootPage() {
             const userLang = navigator.language; // Solo usa 'language'
 
             // Redirige basado en el idioma
-            if (userLang.startsWith('en')) {
+            if (userLang.startsWith('es')) {
                 router.push('/en'); // Redirigir a la versión en inglés
             } else {
                 router.push('/es'); // Redirigir a la versión en español
