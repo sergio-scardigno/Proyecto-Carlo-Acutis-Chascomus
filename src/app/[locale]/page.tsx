@@ -71,64 +71,18 @@ export default function Home() {
                     className="rounded-lg shadow-lg"
                 />
 
-                <hr className="w-full border-t border-gray-300 my-4" />
+                <hr className="w-full border-t border-gray-300 my-4 mb-6 mt-6" />
 
-                <Image
-                    src="/img/entronacion.jpg"
-                    width={500}
-                    height={500}
-                    alt="Picture of the ceremony"
-                    className="rounded-lg shadow-lg"
-                />
+                <p className="text-3xl font-bold mb-4 text-gray-800 tracking-wider drop-shadow-lg mt-6">
+                    {t('entronizacion')}
+                </p>
 
-                <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-                    <p className="text-center mt-4 mb-4">{t('ceremony')}</p>
-                </div>
-                <Timeline />
-
-                <hr className="w-full border-t border-gray-300 my-4" />
-                <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-                    <h2 className="font-semibold text-center mt-4 mb-4">
-                        {t('monsenor')}
-                    </h2>
-                    <p className="text-center mt-4 mb-4 text-justify">
-                        {t('description2')}
-                    </p>
-                </div>
                 <iframe
-                    className="w-full"
-                    height={500}
-                    src="https://www.youtube.com/embed/IpkpJDSHfTg?si=JHq-gc4QOnvrosm0"
+                    className="w-full h-[600px] mt-6"
+                    src="https://www.youtube.com/embed/dH65bOVBegk?si=BJ7tQ4eXZ63tviah"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 ></iframe>
-
-                <hr className="w-full border-t border-gray-300 my-4" />
-                <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-                    <h2 className="font-semibold text-center mt-4 mb-4">
-                        {t('obispo')}
-                    </h2>
-                    <p className="text-center mt-4 mb-4 text-justify">
-                        {t('description3')}
-                    </p>
-                </div>
-                <iframe
-                    className="w-full"
-                    height={500}
-                    src="https://www.youtube.com/embed/vSFATF3z65o?si=nCUXvjm2xrR9Fu1p"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                ></iframe>
-
-                <hr className="w-full border-t border-gray-300 my-4" />
-
-                <Image
-                    src="/img/folleto.webp"
-                    width={500}
-                    height={500}
-                    alt="Picture of the brochure"
-                    className="rounded-lg shadow-lg"
-                />
 
                 <hr className="w-full border-t border-gray-300 my-4" />
             </div>
