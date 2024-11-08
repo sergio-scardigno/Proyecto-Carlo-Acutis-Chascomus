@@ -74,12 +74,12 @@ export default function Home() {
                 <hr className="w-full border-t border-gray-300 my-4 mb-6 mt-6" />
 
                 <p className="text-3xl font-bold mb-4 text-gray-800 tracking-wider drop-shadow-lg mt-6">
-                    {t('entronizacion')}
+                    {t('carlo-acutis-IA')}
                 </p>
 
                 <iframe
                     className="w-full h-[600px] mt-6"
-                    src="https://www.youtube.com/embed/dH65bOVBegk?si=BJ7tQ4eXZ63tviah"
+                    src="https://www.youtube.com/embed/IDLRpLeyi-8?si=n5WsmDXTV7hu-n5r"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 ></iframe>
