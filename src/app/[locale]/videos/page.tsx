@@ -19,10 +19,7 @@ export default function Oracion() {
                     <p className="text-base font-bold mb-4 text-gray-800 tracking-wider drop-shadow-lg">
                         {t('entronizacion-bsas')}
                     </p>
-                    <div
-                        className="w-full aspect-w-16 aspect-h-12"
-                        style={{ height: '500px' }}
-                    >
+                    <div className="w-full aspect-w-16 aspect-h-12 h-64 md:h-500px">
                         <iframe
                             className="w-full h-full"
                             src="https://www.youtube.com/embed/PZYsdxbZRFU?si=ceMX472AJ4wzMuVI"
@@ -39,10 +36,7 @@ export default function Oracion() {
                     <p className="text-base font-bold mb-4 text-gray-800 tracking-wider drop-shadow-lg">
                         {t('entronizacion')}
                     </p>
-                    <div
-                        className="w-full aspect-w-16 aspect-h-12"
-                        style={{ height: '500px' }}
-                    >
+                    <div className="w-full aspect-w-16 aspect-h-12 h-64 md:h-500px">
                         <iframe
                             className="w-full h-full"
                             src="https://www.youtube.com/embed/dH65bOVBegk?si=BJ7tQ4eXZ63tviah"
