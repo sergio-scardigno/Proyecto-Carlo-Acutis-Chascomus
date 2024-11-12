@@ -33,7 +33,7 @@ export default function Oracion() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 w-full">
+            <div className="grid grid-cols-1 gap-8 w-full mt-5">
                 {/* Video Entronización */}
                 <div className="flex flex-col items-center">
                     <p className="text-base font-bold mb-4 text-gray-800 tracking-wider drop-shadow-lg">
