@@ -95,7 +95,7 @@ export default function Home() {
                     href={`https://chat.whatsapp.com/L3LSfsMeNFv95uNPe7VP0f`}
                     className="block text-red-500 py-2 lg:py-0 hover:text-black"
                 >
-                    <p>Unirme al grupo de Whatsapp</p>
+                    <p>{t('whatsapp-group')}</p>
                 </Link>
             </div>
         </>
