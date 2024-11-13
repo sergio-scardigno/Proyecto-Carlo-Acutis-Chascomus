@@ -6,6 +6,7 @@ import './globals.css';
 import Timeline from '../../components/timeline-carlo-acutis';
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
     const t = useTranslations('IndexPage');
@@ -89,6 +90,13 @@ export default function Home() {
                 <p className="text-base font-bold mb-4 text-center text-gray-800 tracking-wider drop-shadow-lg mt-6">
                     {t('invitation')}
                 </p>
+
+                <Link
+                    href={`https://chat.whatsapp.com/L3LSfsMeNFv95uNPe7VP0f`}
+                    className="block text-red-500 py-2 lg:py-0 hover:text-black"
+                >
+                    <p>Unirme al grupo de Whatsapp</p>
+                </Link>
             </div>
         </>
     );
