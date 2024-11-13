@@ -11,7 +11,10 @@ export default function Oracion() {
             </h1> */}
 
             {/* Sección Entronizaciones */}
-            <h2 className="text-3xl font-semibold mb-4"> {t('title')}</h2>
+            <h2 className="text-3xl font-semibold mb-4 title-entronaciones">
+                {' '}
+                {t('title')}
+            </h2>
 
             <div className="grid grid-cols-1 gap-8 w-full">
                 {/* Video Entronización */}

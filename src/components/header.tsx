@@ -6,11 +6,14 @@ import LocalSwitcher from './local-switcher';
 import { usePathname } from 'next/navigation'; // Hook para obtener la ruta actual
 import { useLocale } from 'next-intl'; // Hook para obtener el idioma actual
 import SocialMedia from '../components/SocialMedia';
+import { useState } from 'react';
 
 export default function Header() {
     const t = useTranslations('Navigation');
     const pathname = usePathname(); // Obtiene la ruta actual
     const locale = useLocale(); // Obtiene el idioma actual
+
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <header className="p-4">
@@ -40,23 +43,65 @@ export default function Header() {
                 </div>
             </div>
 
-            <nav className="flex flex-wrap items-center justify-between switcher">
-                {/* Link a la página principal con el locale actual */}
-                <Link href={`/${locale}`} className="nav-link">
-                    {t('home')}
-                </Link>
-                {/* Link a la página de oración con el locale actual */}
-                <Link href={`/${locale}/oracion`} className="nav-link">
-                    {t('url')}
-                </Link>
-                {/* Link a la página de videos con el locale actual */}
-                <Link href={`/${locale}/videos`} className="nav-link">
-                    {t('videos')}
-                </Link>
-                {/* Link a la página de testimonios con el locale actual */}
-                <Link href={`/${locale}/testimonios`} className="nav-link">
-                    {t('testimonios')}
-                </Link>
+            <nav className="bg-transparent p-4">
+                <div className="flex items-center justify-between lg:justify-center">
+                    {/* Logo o nombre de la aplicación */}
+                    <Link
+                        href={`/${locale}`}
+                        className="text-red-500 text-lg font-semibold lg:absolute left-4"
+                    >
+                        {t('home')}
+                    </Link>
+
+                    {/* Botón de menú para pantallas pequeñas, alineado a la derecha */}
+                    <div className="lg:hidden flex-1 flex justify-end">
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            className="text-red-500 focus:outline-none hover:text-black"
+                        >
+                            <svg
+                                className="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                {/* Links del menú: centrados en desktop, colapsables en móvil */}
+                <div
+                    className={`lg:flex flex-col lg:flex-row lg:space-x-4 lg:justify-center lg:items-center ${
+                        isOpen ? 'block' : 'hidden'
+                    }`}
+                >
+                    <Link
+                        href={`/${locale}/oracion`}
+                        className="block text-red-500 py-2 lg:py-0 hover:text-black"
+                    >
+                        {t('url')}
+                    </Link>
+                    <Link
+                        href={`/${locale}/videos`}
+                        className="block text-red-500 py-2 lg:py-0 hover:text-black"
+                    >
+                        {t('videos')}
+                    </Link>
+                    <Link
+                        href={`/${locale}/testimonios`}
+                        className="block text-red-500 py-2 lg:py-0 hover:text-black"
+                    >
+                        {t('testimonios')}
+                    </Link>
+                </div>
             </nav>
         </header>
     );

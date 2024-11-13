@@ -73,18 +73,22 @@ export default function Home() {
 
                 <hr className="w-full border-t border-gray-300 my-4 mb-6 mt-6" />
 
-                <p className="text-3xl font-bold mb-4 text-gray-800 tracking-wider drop-shadow-lg mt-6">
+                <p className="text-3xl font-bold mb-4 text-center text-gray-800 tracking-wider drop-shadow-lg mt-6">
                     {t('carlo-acutis-IA')}
                 </p>
 
                 <iframe
-                    className="w-full h-[600px] mt-6"
+                    className="w-full aspect-w-16 aspect-h-12 h-64 md:h-500px"
                     src="https://www.youtube.com/embed/3IQF38Icrgw?si=NEbdf8kycFXr7rKe"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 ></iframe>
 
                 <hr className="w-full border-t border-gray-300 my-4" />
+
+                <p className="text-base font-bold mb-4 text-center text-gray-800 tracking-wider drop-shadow-lg mt-6">
+                    {t('invitation')}
+                </p>
             </div>
         </>
     );
