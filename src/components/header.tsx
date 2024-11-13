@@ -46,12 +46,6 @@ export default function Header() {
             <nav className="bg-transparent p-4">
                 <div className="flex items-center justify-between lg:justify-center">
                     {/* Logo o nombre de la aplicación */}
-                    <Link
-                        href={`/${locale}`}
-                        className="text-red-500 text-lg font-semibold lg:absolute left-4"
-                    >
-                        {t('home')}
-                    </Link>
 
                     {/* Botón de menú para pantallas pequeñas, alineado a la derecha */}
                     <div className="lg:hidden flex-1 flex justify-end">
@@ -83,6 +77,13 @@ export default function Header() {
                         isOpen ? 'block' : 'hidden'
                     }`}
                 >
+                    <Link
+                        href={`/${locale}`}
+                        className="block text-red-500 py-2 lg:py-0 hover:text-black"
+                    >
+                        {t('home')}
+                    </Link>
+
                     <Link
                         href={`/${locale}/oracion`}
                         className="block text-red-500 py-2 lg:py-0 hover:text-black"
