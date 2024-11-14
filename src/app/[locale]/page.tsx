@@ -7,6 +7,7 @@ import Timeline from '../../components/timeline-carlo-acutis';
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import ContactForm from '../../components/ContactForm';
 
 export default function Home() {
     const t = useTranslations('IndexPage');
@@ -90,6 +91,8 @@ export default function Home() {
                 <p className="text-base font-bold mb-4 text-center text-gray-800 tracking-wider drop-shadow-lg mt-6">
                     {t('invitation')}
                 </p>
+
+                <ContactForm />
             </div>
         </>
     );
