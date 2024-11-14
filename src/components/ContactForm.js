@@ -10,6 +10,7 @@ const ContactForm = () => {
         email: '',
         message: '',
         tel: '',
+        link: '', // Campo link agregado para almacenar el enlace de WhatsApp
     });
     const [status, setStatus] = useState('');
     const [errors, setErrors] = useState({}); // Estado para guardar los errores
@@ -48,20 +49,32 @@ const ContactForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Validamos el formulario antes de enviarlo
-        const formErrors = validateForm();
-        if (Object.keys(formErrors).length > 0) {
-            setErrors(formErrors);
-            setStatus('Por favor, corrige los errores.');
-            return;
-        }
+        // Eliminar todos los caracteres no numéricos del teléfono (sin espacios ni símbolos)
+        const formattedPhoneNumber = formData.tel.replace(/\D/g, ''); // Elimina cualquier cosa que no sea un número
 
-        // Si no hay errores, enviamos el formulario con emailjs
+        // Generar el enlace de WhatsApp con el "+" al inicio y el número formateado
+        const whatsappLink = `https://wa.me/+${formattedPhoneNumber}`;
+
+        // Actualizar el valor del campo oculto 'link' con el enlace de WhatsApp
+        setFormData({
+            ...formData,
+            link: whatsappLink, // Asignamos el enlace de WhatsApp al campo 'link'
+        });
+
+        // Asegurarnos de que el valor de 'link' esté correcto antes de enviarlo
+        console.log('Enlace de WhatsApp antes de enviar: ', whatsappLink); // Debería verse correctamente como 'https://wa.me/+542214099792'
+
+        // Obtener el formulario y establecer el valor del campo oculto 'link' antes de enviarlo
+        const formElement = e.target;
+        const hiddenLinkInput = formElement.querySelector('[name="link"]');
+        hiddenLinkInput.value = whatsappLink;
+
+        // Enviar el formulario con EmailJS
         emailjs
             .sendForm(
                 'Carlo-Acutis', // Reemplaza con tu service ID
                 'template_Carlo-Acutis', // Reemplaza con tu template ID
-                e.target,
+                formElement,
                 '6j0gT46VQm7q2bU7V' // Reemplaza con tu User ID de EmailJS
             )
             .then(
@@ -76,7 +89,8 @@ const ContactForm = () => {
                 }
             );
 
-        setFormData({ name: '', email: '', message: '', tel: '' }); // Limpiar formulario
+        // Limpiar el formulario
+        setFormData({ name: '', email: '', message: '', tel: '', link: '' });
     };
 
     return (
@@ -141,6 +155,13 @@ const ContactForm = () => {
                             rows="4"
                         />
                     </div>
+
+                    {/* Campo oculto para el link de WhatsApp */}
+                    <input
+                        type="hidden"
+                        name="link"
+                        value={formData.link} // El valor de WhatsAppLink se asigna aquí
+                    />
 
                     {/* Botón de envío */}
                     <div className="flex justify-center">
