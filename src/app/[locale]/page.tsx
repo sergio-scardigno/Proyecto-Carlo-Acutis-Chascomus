@@ -72,6 +72,18 @@ export default function Home() {
                     alt="Picture of Carlo Acutis"
                     className="rounded-lg shadow-lg"
                 />
+                <hr className="w-full border-t border-gray-300 my-4 mb-6 mt-6" />
+
+                <p className="text-3xl font-bold mb-4 text-center text-gray-800 tracking-wider drop-shadow-lg mt-6">
+                    {t('papa-francisco')}
+                </p>
+
+                <iframe
+                    className="w-full aspect-w-16 aspect-h-12 h-64 md:h-500px"
+                    src="https://www.youtube.com/embed/s0antHcDgeI?si=zNYygzVKZ7zVCGWj"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
 
                 <hr className="w-full border-t border-gray-300 my-4 mb-6 mt-6" />
 
