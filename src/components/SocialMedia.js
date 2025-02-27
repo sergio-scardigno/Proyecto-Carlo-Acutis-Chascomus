@@ -5,7 +5,7 @@ const SocialMedia = () => {
     return (
         <div style={{ display: 'flex', gap: '10px' }}>
             <a
-                href="https://www.facebook.com/groups/932192168926656/"
+                href="https://www.facebook.com/people/CARLO-Acutis-Chascomus-Argentina/61573008124011/"
                 target="_blank"
                 rel="noopener noreferrer"
             >
