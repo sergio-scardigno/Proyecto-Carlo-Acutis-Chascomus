@@ -82,7 +82,8 @@
         "home": "Home",
         "url": "Novena",
         "videos": "Videos",
-        "testimonios": "Testimonios"
+        "testimonios": "Testimonios",
+        "entronizaciones": "Entronizaciones"
     },
     "Videos": {
         "home": "Inicio",
@@ -125,6 +126,9 @@
             "cardSubtitle": "\"Nuestra Señora de la Merced\" Cathedral",
             "cardDetailedText": "Upon arriving at the Cathedral, a Holy Mass will be celebrated in honor of Carlo Acutis, who passed away on October 10, 2016, at the age of 15."
         }
+    },
+    "entronizaciones": {
+        "title": "Entronizaciones"
     },
     "Footer": {
         "copyright": "© 2024 Powered by Vercel. All rights reserved.",
