@@ -102,6 +102,12 @@ export default function Header() {
                     >
                         {t('testimonios')}
                     </Link>
+                    <Link
+                        href={`/${locale}/entronizaciones`}
+                        className="block text-red-500 py-2 lg:py-0 hover:text-black"
+                    >
+                        {t('entronizaciones')}
+                    </Link>
                 </div>
             </nav>
         </header>
