@@ -120,16 +120,16 @@ export default function Oracion() {
                         conocida por su participación activa en la
                         evangelización a través de redes sociales y medios
                         digitales. Se ha convertido en una referente de la
-                        "Iglesia Millennial" en Argentina, impulsando espacios
-                        de encuentro, oración y testimonio especialmente
-                        orientados a los jóvenes.
+                        &quot;Iglesia Millennial&quot; en Argentina, impulsando
+                        espacios de encuentro, oración y testimonio
+                        especialmente orientados a los jóvenes.
                         <br />
                         <br />
                         Es muy cercana a ambientes eclesiales contemporáneos y
                         ha trabajado en colaboración con proyectos como
-                        "Católicos en red", "Misa Joven", y otros eventos que
-                        buscan renovar la fe juvenil con lenguaje y formatos
-                        actuales.
+                        &quot;Católicos en red&quot;, &quot;Misa Joven&quot;, y
+                        otros eventos que buscan renovar la fe juvenil con
+                        lenguaje y formatos actuales.
                         <br />
                         <br />
                         Guadalupe también ha sido invitada a programas de

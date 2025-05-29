@@ -35,7 +35,7 @@ export default function Footer() {
                         className="custom-button"
                     >
                         <span className="icon">
-                            <img
+                            <Image
                                 src="/img/programmer.png"
                                 alt="Desarrollado por Sergio Scardigno"
                                 width={40}
