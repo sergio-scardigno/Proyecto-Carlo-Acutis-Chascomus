@@ -112,6 +112,70 @@ export default function Oracion() {
                         ></iframe> */}
                     </div>
                 </div>
+
+                {/* Video Guadalupe García Corigliano */}
+                <div className="flex flex-col items-center">
+                    <p className="text-base font-bold mb-4 text-gray-800 tracking-wider drop-shadow-lg">
+                        Guadalupe García Corigliano es una joven argentina
+                        conocida por su participación activa en la
+                        evangelización a través de redes sociales y medios
+                        digitales. Se ha convertido en una referente de la
+                        "Iglesia Millennial" en Argentina, impulsando espacios
+                        de encuentro, oración y testimonio especialmente
+                        orientados a los jóvenes.
+                        <br />
+                        <br />
+                        Es muy cercana a ambientes eclesiales contemporáneos y
+                        ha trabajado en colaboración con proyectos como
+                        "Católicos en red", "Misa Joven", y otros eventos que
+                        buscan renovar la fe juvenil con lenguaje y formatos
+                        actuales.
+                        <br />
+                        <br />
+                        Guadalupe también ha sido invitada a programas de
+                        televisión católicos y eventos diocesanos, donde
+                        comparte su experiencia de fe, su camino personal y su
+                        misión de anunciar a Jesús con alegría, creatividad y
+                        autenticidad.
+                    </p>
+                    <div className="w-full aspect-w-16 aspect-h-9">
+                        <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/WEL1cyQLlZ0"
+                            title="Guadalupe García Corigliano"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        ></iframe>
+                    </div>
+                </div>
+
+                {/* Video Rector de la Basílica de la Mercè */}
+                <div className="flex flex-col items-center">
+                    <p className="text-base font-bold mb-4 text-gray-800 tracking-wider drop-shadow-lg">
+                        El actual rector de la Basílica de la Mercè en Barcelona
+                        es el Padre Fermín Delgado, sacerdote de la Orden de la
+                        Merced. Desde su nombramiento en diciembre de 2023, ha
+                        liderado esta emblemática iglesia, promoviendo la
+                        devoción a la Virgen de la Merced y fortaleciendo su
+                        papel como centro espiritual y social en la ciudad.
+                    </p>
+
+                    <p className="text-base font-bold mb-4 text-gray-800 tracking-wider drop-shadow-lg">
+                        El Padre Fermín ha sido una figura destacada en diversas
+                        iniciativas pastorales y sociales. Por ejemplo, ha
+                        participado activamente en la acogida de reclusas del
+                        centro penitenciario de Wad-Ras durante las
+                        celebraciones de la Mercè, promoviendo la inclusión y el
+                        acompañamiento espiritual.
+                    </p>
+                    <div className="w-full aspect-w-16 aspect-h-9">
+                        <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/l4NlzeUuFAM"
+                            title="Padre Fermín Delgado - Basílica de la Mercè"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        ></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     );
