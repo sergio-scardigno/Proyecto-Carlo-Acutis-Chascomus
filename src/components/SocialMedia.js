@@ -1,5 +1,6 @@
 // components/SocialMedia.js
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaTiktok } from 'react-icons/fa6';
 
 const SocialMedia = () => {
     return (
@@ -21,6 +22,16 @@ const SocialMedia = () => {
             >
                 <FaInstagram
                     className="text-pink-500 hover:text-pink-700"
+                    size={30}
+                />
+            </a>
+            <a
+                href="https://www.tiktok.com/@carloacutischascomus"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <FaTiktok
+                    className="text-black hover:text-gray-700"
                     size={30}
                 />
             </a>
