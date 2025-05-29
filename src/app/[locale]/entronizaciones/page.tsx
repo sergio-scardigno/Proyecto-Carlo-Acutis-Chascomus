@@ -1,39 +1,113 @@
 import Image from 'next/image';
 
 export default function Entronizaciones() {
-    // Puedes reemplazar estos datos con los reales
     const entronizaciones = [
+        // Manuales (con imagen)
+        {
+            lugar: 'Basílica de Luján',
+            fecha: '',
+            descripcion:
+                'Vivimos un acontecimiento trascendental en la historia de nuestra fe: la entronización de la imagen de Carlo Acutis en la Basílica de Nuestra Señora de Luján, el corazón espiritual de Argentina. Agradecemos al Padre Lucas García por su generosidad y compromiso.',
+            imagen: '/img/entronizaciones/lujan.jpg',
+        },
+        {
+            lugar: 'Maipú - Parroquia Nuestra Señora del Rosario',
+            fecha: '16 de marzo 2025',
+            descripcion:
+                'Celebramos la entronización de la imagen de Carlo Acutis en la Parroquia Nuestra Señora del Rosario en Maipú, Provincia de Buenos Aires. Presidida por Monseñor José María Baliña.',
+            imagenes: [
+                '/img/entronizaciones/maipu1.jpg',
+                '/img/entronizaciones/maipu2.jpg',
+            ],
+        },
+        {
+            lugar: 'Las Armas - Capilla Nuestra Señora de Luján',
+            fecha: '',
+            descripcion:
+                'Compartimos la emotiva entronización de Carlo Acutis en Las Armas. La misa fue presidida por Monseñor José María Baliña.',
+            imagenes: [
+                '/img/entronizaciones/lasarmas1.jpg',
+                '/img/entronizaciones/lasarmas2.jpg',
+            ],
+        },
+        {
+            lugar: 'Labardén - Parroquia Sagrado Corazón de Jesús',
+            fecha: '16 de marzo 2025',
+            descripcion:
+                'Entronización de Carlo Acutis presidida por Monseñor José María Baliña, con un profundo espíritu de fe y emoción.',
+            imagenes: [
+                '/img/entronizaciones/labarden1.jpg',
+                '/img/entronizaciones/labarden2.jpg',
+            ],
+        },
+        {
+            lugar: 'General Guido - Parroquia Nuestra Señora de la Merced',
+            fecha: '16 de marzo 2025',
+            descripcion:
+                'La comunidad de General Guido recibió la imagen de Carlo Acutis con gran devoción. Presidida por Monseñor José María Baliña.',
+            imagenes: [
+                '/img/entronizaciones/guido1.jpg',
+                '/img/entronizaciones/guido2.jpg',
+            ],
+        },
+        {
+            lugar: 'Castelli - Parroquia Santa Rosa de Lima',
+            fecha: '16 de marzo 2025',
+            descripcion:
+                'Celebración de la entronización de Carlo Acutis en Castelli, presidida por el Padre Ezequiel. Incluyó el testimonio de Carlos Bonicalzi.',
+            imagenes: [
+                '/img/entronizaciones/castelli1.jpg',
+                '/img/entronizaciones/castelli2.jpg',
+            ],
+        },
+        {
+            lugar: 'FIBRA TV - Chascomús',
+            fecha: '10 de marzo 2025',
+            descripcion:
+                'Se entronizó la imagen de Carlo Acutis traída desde Asís, con bendición del Obispo Juan Ignacio Liebana y participación de Scouts y Bomberos.',
+            imagen: '/img/entronizaciones/fibra-tv.jpg',
+        },
+
+        // JSONs (sin imagen/video)
         {
             lugar: 'Dolores - Merendero San Juan Bautista',
-            fecha: '', // No se especifica en el documento
+            fecha: '',
             descripcion:
-                'Desde el corazón, queremos expresar un profundo agradecimiento a cada uno de ustedes por hacer posible la hermosa entronización que vivimos juntos. Fue un momento de fe, amor y unión que quedará grabado en nuestros corazones.',
+                'Agradecimiento profundo por hacer posible esta hermosa entronización. Un momento de fe, amor y unión que quedará en el corazón de todos.',
         },
         {
             lugar: 'Roque Pérez - Iglesia de Roque Pérez',
-            fecha: '', // No se especifica una fecha exacta
+            fecha: '',
             descripcion:
-                'La comunidad vivió un momento inolvidable con la entronización de la imagen del Beato Carlo Acutis. Fue una jornada cargada de fe, emoción y profunda espiritualidad que tocó los corazones de niños, jóvenes y adultos.',
+                'Momento inolvidable con la entronización del Beato Carlo Acutis. Una jornada cargada de fe y emoción.',
         },
         {
             lugar: 'Capital Federal - Iglesia del Santísimo Sacramento',
-            fecha: '', // No se especifica en el documento
+            fecha: '',
             descripcion:
-                'Fue entronizada la imagen de Carlo Acutis en una ceremonia muy emotiva y emocionante. La misa estuvo a cargo del padre Rafael Emilio Caceres Olave.',
+                'La entronización de Carlo Acutis fue una ceremonia muy emotiva y emocionante. La misa estuvo a cargo del padre Rafael Emilio Caceres Olave.',
         },
         {
             lugar: 'Buenos Aires - UCA (Campus Puerto Madero)',
-            fecha: '28 de abril', // Fecha proporcionada en el texto
+            fecha: '28 de abril',
             descripcion:
-                'El Instituto de Espiritualidad y Acción Pastoral de la UCA inauguró el Oratorio “Carlos Acutis” con una misa en la Iglesia del Corazón de Jesús. El oratorio está ubicado en el Edif. Santo Tomás Moro.',
+                'La UCA inauguró el Oratorio "Carlos Acutis" en el Edif. Santo Tomás Moro, con misa previa en la Iglesia del Corazón de Jesús.',
         },
         {
             lugar: 'Verónica - Iglesia de Lourdes',
             fecha: '7 de diciembre de 2024',
             descripcion:
-                'La entronización de Carlo Acutis reunió a la comunidad en un ambiente de fe, esperanza y gratitud. La ceremonia reafirmó la fe en el ejemplo del joven beato y contó con la colaboración del cuerpo de bomberos y el grupo Scout local.',
+                'Una celebración con fe, esperanza y gratitud. Participaron los bomberos y el grupo Scout de la ciudad.',
         },
     ];
+
+    // Evitar lugares duplicados
+    const lugaresUnicos = new Set();
+    const entronizacionesUnicas = entronizaciones.filter((e) => {
+        if (lugaresUnicos.has(e.lugar)) return false;
+        lugaresUnicos.add(e.lugar);
+        return true;
+    });
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-4 hero">
@@ -41,12 +115,24 @@ export default function Entronizaciones() {
                 Entronizaciones de Carlo Acutis
             </h1>
             <div className="grid grid-cols-1 gap-8 w-full max-w-3xl">
-                {entronizaciones.map((ent, idx) => (
+                {entronizacionesUnicas.map((ent, idx) => (
                     <div
                         key={idx}
-                        className="p-6 border border-gray-300 rounded-lg shadow-lg bg-white flex flex-col md:flex-row items-center gap-6"
+                        className="p-6 border border-gray-300 rounded-lg shadow-lg bg-white flex flex-col gap-4"
                     >
-                        {ent.imagen && (
+                        <div>
+                            <h2 className="text-xl font-bold text-gray-800">
+                                {ent.lugar}
+                            </h2>
+                            {ent.fecha && (
+                                <p className="text-gray-600 font-semibold">
+                                    {ent.fecha}
+                                </p>
+                            )}
+                        </div>
+                        <p className="text-gray-700">{ent.descripcion}</p>
+
+                        {ent.imagen ? (
                             <Image
                                 src={ent.imagen}
                                 width={220}
@@ -54,247 +140,31 @@ export default function Entronizaciones() {
                                 alt={`Entronización en ${ent.lugar}`}
                                 className="rounded-lg shadow"
                             />
+                        ) : (
+                            <div className="w-[220px] h-[220px] flex items-center justify-center bg-gray-100 text-gray-400 rounded-lg shadow border border-gray-200">
+                                <span className="text-center">
+                                    Sin foto disponible
+                                </span>
+                            </div>
                         )}
-                        <div className="flex-1">
-                            <h2 className="text-xl font-bold mb-2 text-gray-800">
-                                {ent.lugar}
-                            </h2>
-                            <p className="text-gray-600 mb-1 font-semibold">
-                                {ent.fecha}
-                            </p>
-                            <p className="mb-4 text-gray-700">
-                                {ent.descripcion}
-                            </p>
-                            {ent.video && (
-                                <div className="w-full aspect-w-16 aspect-h-9">
-                                    <iframe
-                                        className="w-full h-56 md:h-64"
-                                        src={ent.video}
-                                        title={`Video entronización en ${ent.lugar}`}
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    ></iframe>
-                                </div>
-                            )}
-                        </div>
+                        {ent.imagenes && (
+                            <div className="grid grid-cols-2 gap-4">
+                                {ent.imagenes.map((src, i) => (
+                                    <Image
+                                        key={i}
+                                        src={src}
+                                        width={320}
+                                        height={180}
+                                        alt={`Entronización en ${ent.lugar} ${
+                                            i + 1
+                                        }`}
+                                        className="rounded-lg shadow"
+                                    />
+                                ))}
+                            </div>
+                        )}
                     </div>
                 ))}
-            </div>
-        </div>
-    );
-}
-import './entronizaciones.css';
-
-export default function Entronizaciones() {
-    return (
-        <div className="flex flex-col items-center justify-center min-h-screen p-6 hero">
-            <h1 className="mb-8 font-semibold text-center font-zapfino text-6xl">
-                Entronizaciones
-            </h1>
-
-            {/* Entronización en la Basílica de Luján */}
-            <div className="w-full max-w-2xl mb-8 p-6 border border-gray-300 rounded-lg shadow-lg">
-                <h2 className="text-3xl font-bold mb-4">
-                    Un día histórico: Carlo Acutis entronizado en la Basílica de
-                    Luján
-                </h2>
-                <p className="mb-4">
-                    Vivimos un acontecimiento trascendental en la historia de
-                    nuestra fe: la entronización de la imagen de Carlo Acutis en
-                    la Basílica de Nuestra Señora de Luján, el corazón
-                    espiritual de Argentina.
-                </p>
-                <p className="mb-4">
-                    La imagen fue recibida con alegría y devoción. Agradecemos
-                    especialmente al Rector de la Basílica, el Padre Lucas
-                    García, por su generosidad y compromiso.
-                </p>
-                <p className="font-semibold">
-                    ¡Carlo Acutis, ruega por nosotros!
-                </p>
-                <img
-                    src="/img/entronizaciones/lujan.jpg"
-                    alt="Entronización en la Basílica de Luján"
-                    className="mt-4 rounded-lg"
-                />
-            </div>
-
-            {/* Entronización en Maipú */}
-            <div className="w-full max-w-2xl mb-8 p-6 border border-gray-300 rounded-lg shadow-lg">
-                <h2 className="text-3xl font-bold mb-4">
-                    Entronización en la Parroquia Nuestra Señora del Rosario -
-                    Maipú
-                </h2>
-                <p className="mb-4">
-                    El domingo 16 de Marzo 2025, celebramos la entronización de
-                    la imagen de Carlo Acutis en la Parroquia Nuestra Señora del
-                    Rosario en Maipú, Provincia de Buenos Aires.
-                </p>
-                <p className="mb-4">
-                    Fue una ceremonia hermosa y cálida, presidida por Monseñor
-                    José María Baliña, donde la fe y el amor de la comunidad
-                    hicieron de este momento algo inolvidable.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mt-4">
-                    <img
-                        src="/img/entronizaciones/maipu1.jpg"
-                        alt="Entronización en Maipú"
-                        className="rounded-lg"
-                    />
-                    <img
-                        src="/img/entronizaciones/maipu2.jpg"
-                        alt="Entronización en Maipú"
-                        className="rounded-lg"
-                    />
-                </div>
-            </div>
-
-            {/* Entronización en Las Armas */}
-            <div className="w-full max-w-2xl mb-8 p-6 border border-gray-300 rounded-lg shadow-lg">
-                <h2 className="text-3xl font-bold mb-4">
-                    Entronización en la comunidad de Las Armas
-                </h2>
-                <p className="mb-4">
-                    Compartimos la emotiva entronización de la imagen de Carlo
-                    Acutis en la Capilla Nuestra Señora de Luján, en Las Armas,
-                    Buenos Aires.
-                </p>
-                <p className="mb-4">
-                    La Santa Misa fue presidida por Monseñor José María Baliña,
-                    en una celebración llena de fe y emoción. El grupo de Carlo
-                    Acutis está inmensamente agradecido por el cariño y la
-                    apertura con la que han recibido su imagen.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mt-4">
-                    <img
-                        src="/img/entronizaciones/lasarmas1.jpg"
-                        alt="Entronización en Las Armas"
-                        className="rounded-lg"
-                    />
-                    <img
-                        src="/img/entronizaciones/lasarmas2.jpg"
-                        alt="Entronización en Las Armas"
-                        className="rounded-lg"
-                    />
-                </div>
-            </div>
-
-            {/* Entronización en Labardén */}
-            <div className="w-full max-w-2xl mb-8 p-6 border border-gray-300 rounded-lg shadow-lg">
-                <h2 className="text-3xl font-bold mb-4">
-                    Entronización de la imagen de Carlo Acutis en Labardén
-                </h2>
-                <p className="mb-4">
-                    El domingo 16 de marzo 2025 vivimos un momento de gran
-                    significado en la Parroquia Sagrado Corazón de Jesús de
-                    Labardén, donde se llevó a cabo la entronización de la
-                    imagen de Carlo Acutis.
-                </p>
-                <p className="mb-4">
-                    La celebración fue presidida por Monseñor José María Baliña,
-                    en una ceremonia llena de fe y emoción. Carlo, con su
-                    testimonio de vida y amor a la Eucaristía, sigue tocando
-                    corazones y acercando a muchos a Dios.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mt-4">
-                    <img
-                        src="/img/entronizaciones/labarden1.jpg"
-                        alt="Entronización en Labardén"
-                        className="rounded-lg"
-                    />
-                    <img
-                        src="/img/entronizaciones/labarden2.jpg"
-                        alt="Entronización en Labardén"
-                        className="rounded-lg"
-                    />
-                </div>
-            </div>
-
-            {/* Entronización en General Guido */}
-            <div className="w-full max-w-2xl mb-8 p-6 border border-gray-300 rounded-lg shadow-lg">
-                <h2 className="text-3xl font-bold mb-4">
-                    Carlo Acutis ya está en General Guido
-                </h2>
-                <p className="mb-4">
-                    El domingo 16 de marzo de 2025, la comunidad de General
-                    Guido vivió un momento de gran significado con la
-                    entronización de la imagen de Carlo Acutis en la Parroquia
-                    Nuestra Señora de la Merced.
-                </p>
-                <p className="mb-4">
-                    La ceremonia contó con la presencia y el acompañamiento de
-                    Monseñor José María Baliña. Con su llegada a esta parroquia,
-                    Carlo deja su huella en una nueva comunidad, invitando a
-                    todos a vivir su mensaje de amor a la Eucaristía y entrega a
-                    Dios.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mt-4">
-                    <img
-                        src="/img/entronizaciones/guido1.jpg"
-                        alt="Entronización en General Guido"
-                        className="rounded-lg"
-                    />
-                    <img
-                        src="/img/entronizaciones/guido2.jpg"
-                        alt="Entronización en General Guido"
-                        className="rounded-lg"
-                    />
-                </div>
-            </div>
-
-            {/* Entronización en Castelli */}
-            <div className="w-full max-w-2xl mb-8 p-6 border border-gray-300 rounded-lg shadow-lg">
-                <h2 className="text-3xl font-bold mb-4">
-                    Entronización de la imagen de Carlo Acutis en Castelli
-                </h2>
-                <p className="mb-4">
-                    El domingo 16 de marzo de 2025, la comunidad de Castelli
-                    vivió un momento de gran significado con la entronización de
-                    la imagen de Carlo Acutis en la Parroquia Santa Rosa de
-                    Lima.
-                </p>
-                <p className="mb-4">
-                    La celebración estuvo guiada por el Padre Ezequiel. Durante
-                    la misa, el padre hizo mención al testimonio de fe y al
-                    milagro de Carlos Bonicalzi, quien recibió la intercesión de
-                    Carlo Acutis en su salud y compartió su experiencia en
-                    primera persona.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mt-4">
-                    <img
-                        src="/img/entronizaciones/castelli1.jpg"
-                        alt="Entronización en Castelli"
-                        className="rounded-lg"
-                    />
-                    <img
-                        src="/img/entronizaciones/castelli2.jpg"
-                        alt="Entronización en Castelli"
-                        className="rounded-lg"
-                    />
-                </div>
-            </div>
-
-            {/* Entronización en FIBRA TV */}
-            <div className="w-full max-w-2xl mb-8 p-6 border border-gray-300 rounded-lg shadow-lg">
-                <h2 className="text-3xl font-bold mb-4">
-                    Entronización de la imagen de Carlo Acutis en FIBRA TV
-                </h2>
-                <p className="mb-4">
-                    El jueves 10 del corriente mes, en el local de FIBRA TV se
-                    entronizó la imagen de Carlo Acutis, traída desde Asís,
-                    Italia, lugar donde descansa su cuerpo.
-                </p>
-                <p className="mb-4">
-                    La imagen estuvo en vigilia en el Cuartel de Bomberos y fue
-                    trasladada hasta la esquina de Belgrano y Soler. Se contó
-                    con la presencia del Obispo Juan Ignacio Liebana quien
-                    bendijo la imagen. Otra imagen fue trasladada por los Scouts
-                    hasta la Iglesia Catedral.
-                </p>
-                <img
-                    src="/img/entronizaciones/fibra-tv.jpg"
-                    alt="Entronización en FIBRA TV"
-                    className="mt-4 rounded-lg"
-                />
             </div>
         </div>
     );
