@@ -116,6 +116,18 @@ export default function Entronizaciones() {
                 'Entronización de Carlo Acutis en Lezama, un momento de profunda fe y devoción para la comunidad.',
             imagen: '/img/entronizaciones/LEZAMA.jpg',
         },
+        {
+            lugar: 'Chascomús - Nuestra Señora de Luján',
+            fecha: '',
+            descripcion:
+                '✨ El 8 de junio de 2025 a las 11 hs, en la Iglesia de Nuestra Señora de Luján de Chascomús, vivimos un momento verdaderamente extraordinario: la entronización de la imagen de Carlo Acutis.',
+            imagenes: [
+                '/img/entronizaciones/chascomus/foto1.jpg',
+                '/img/entronizaciones/chascomus/foto2.jpg',
+                '/img/entronizaciones/chascomus/foto3.jpg',
+                '/img/entronizaciones/chascomus/foto4.jpg',
+            ],
+        },
     ];
 
     // Evitar lugares duplicados
