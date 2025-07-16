@@ -1,34 +1,32 @@
 'use client';
+
 import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import Head from 'next/head';
+import { Metadata } from 'next';
 
 const Testimonios = () => {
-    const t = useTranslations('Testimonios'); // 'Testimonios' debe coincidir con el namespace en es.json
+    const t = useTranslations('Testimonios');
 
     useEffect(() => {
-        // Limpiar cualquier instancia anterior de los widgets
         const existingGraphCommentWidget = document.getElementById(
             'graphcomment-widget'
         );
         if (existingGraphCommentWidget) {
-            existingGraphCommentWidget.innerHTML = ''; // Limpia el contenido previo del widget
+            existingGraphCommentWidget.innerHTML = '';
         }
 
         const existingGraphComment = document.getElementById('graphcomment');
         if (existingGraphComment) {
-            existingGraphComment.innerHTML = ''; // Limpia el contenido previo de la caja de comentarios personalizada
+            existingGraphComment.innerHTML = '';
         }
 
-        // Evitar cargar el script del widget más de una vez
         if (!document.getElementById('graphcomment-script')) {
             const scriptWidget = document.createElement('script');
-            scriptWidget.id = 'graphcomment-script'; // Asigna un ID único al script
-            scriptWidget.src = 'https://graphcomment.com/js/widget.js'; // Carga el script del widget de GraphComment
+            scriptWidget.id = 'graphcomment-script';
+            scriptWidget.src = 'https://graphcomment.com/js/widget.js';
             scriptWidget.async = true;
             scriptWidget.defer = true;
 
-            // Inicializa el widget una vez que el script se haya cargado
             scriptWidget.onload = () => {
                 const widgetElement = document.getElementById(
                     'graphcomment-widget'
@@ -56,18 +54,16 @@ const Testimonios = () => {
                 }
             };
 
-            document.body.appendChild(scriptWidget); // Añade el script al body
+            document.body.appendChild(scriptWidget);
         }
 
-        // Evitar cargar el script personalizado más de una vez
         if (!document.getElementById('graphcomment-script-custom')) {
             const scriptCustom = document.createElement('script');
-            scriptCustom.id = 'graphcomment-script-custom'; // Asigna un ID único al script
+            scriptCustom.id = 'graphcomment-script-custom';
             scriptCustom.type = 'text/javascript';
             scriptCustom.async = true;
             scriptCustom.defer = true;
 
-            // Añadir el código del script personalizado
             scriptCustom.innerHTML = `
                 var __semio__params = {
                     graphcommentId: "Carlo-Acutis",
@@ -88,86 +84,41 @@ const Testimonios = () => {
                 })();
             `;
 
-            document.body.appendChild(scriptCustom); // Añade el script al body
+            document.body.appendChild(scriptCustom);
         }
 
-        // Función para cambiar el texto de "Últimos comentarios" a "Últimos testimonios" y "Mejores comentarios" a "Mejores testimonios"
         const modifyCommentTabs = () => {
             const tabs = document.querySelectorAll(
                 'li.svelte-umelhy a.svelte-umelhy'
             );
             tabs.forEach((tab) => {
                 if (tab.textContent === 'Últimos comentarios') {
-                    tab.textContent = 'Últimos testimonios'; // Cambia el texto
+                    tab.textContent = 'Últimos testimonios';
                 } else if (tab.textContent === 'Los mejores comentarios') {
-                    tab.textContent = 'Los mejores testimonios'; // Cambia el texto
+                    tab.textContent = 'Los mejores testimonios';
                 }
             });
         };
 
-        // Esperar un breve tiempo para que el widget se cargue completamente antes de hacer el cambio
-        setTimeout(modifyCommentTabs, 1000); // Ajusta el tiempo si es necesario (aumentado a 1000ms)
+        setTimeout(modifyCommentTabs, 1000);
     }, []);
 
     return (
-        <>
-            <Head>
-                <title>
-                    Testimonios sobre Carlo Acutis - Devoción en Chascomús
-                </title>
-                <meta
-                    name="description"
-                    content="Lee los testimonios de fe y devoción de personas impactadas por Carlo Acutis en Chascomús. Comparte tu experiencia y participa en la comunidad."
-                />
-                <meta
-                    name="keywords"
-                    content="Testimonios, Carlo Acutis, Fe, Devoción, Comunidad, Chascomús"
-                />
-                <meta name="author" content="Tu Nombre" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
-                />
-                <meta
-                    property="og:title"
-                    content="Testimonios sobre Carlo Acutis - Devoción en Chascomús"
-                />
-                <meta
-                    property="og:description"
-                    content="Conoce los testimonios de aquellos que han sido inspirados por Carlo Acutis y su legado espiritual en Chascomús. Únete a la conversación."
-                />
-                <meta
-                    property="og:image"
-                    content="/img/carlo-acutis-testimonios.webp"
-                />
-                <meta
-                    property="og:url"
-                    content="https://www.carloacutis.net.ar/testimonios"
-                />
-                <meta name="twitter:card" content="summary_large_image" />
-                <link
-                    rel="canonical"
-                    href="https://www.carloacutis.net.ar/testimonios"
-                />
-            </Head>
-            <div className="container mx-auto px-4 py-8">
-                <h1 className="mb-8 font-semibold text-center text-4xl lg:text-5xl font-zapfino title-testimonios">
-                    {t('title')}
-                </h1>
+        <div className="container mx-auto px-4 py-8">
+            <h1 className="mb-8 font-semibold text-center text-4xl lg:text-5xl font-zapfino title-testimonios">
+                {t('title')}
+            </h1>
 
-                <div className="max-w-prose mx-auto mb-8">
-                    <p className="mb-4 text-lg md:text-xl">{t('intro')}</p>
-                    <p className="mb-4 text-lg md:text-xl">{t('intro2')}</p>
-                    <p className="mb-4 text-lg md:text-xl">{t('intro3')}</p>
-                </div>
-
-                {/* Widget de GraphComment */}
-                <div id="graphcomment-widget" className="max-w-full mb-8"></div>
-
-                {/* Caja de comentarios personalizada */}
-                <div id="graphcomment" className="max-w-full"></div>
+            <div className="max-w-prose mx-auto mb-8">
+                <p className="mb-4 text-lg md:text-xl">{t('intro')}</p>
+                <p className="mb-4 text-lg md:text-xl">{t('intro2')}</p>
+                <p className="mb-4 text-lg md:text-xl">{t('intro3')}</p>
             </div>
-        </>
+
+            <div id="graphcomment-widget" className="max-w-full mb-8"></div>
+
+            <div id="graphcomment" className="max-w-full"></div>
+        </div>
     );
 };
 

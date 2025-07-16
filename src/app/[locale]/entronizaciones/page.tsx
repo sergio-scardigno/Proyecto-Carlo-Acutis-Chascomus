@@ -1,4 +1,26 @@
+'use client';
+
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Entronizaciones de Carlo Acutis',
+    description:
+        'Galería y detalles de las entronizaciones de las reliquias e imágenes del Beato Carlo Acutis en diversas comunidades y parroquias de Argentina.',
+    openGraph: {
+        title: 'Entronizaciones de Carlo Acutis',
+        description:
+            'Galería y detalles de las entronizaciones de las reliquias e imágenes del Beato Carlo Acutis en diversas comunidades y parroquias de Argentina.',
+        images: [
+            {
+                url: '/img/entronizaciones/Basílica%20de%20Luján.jpg', // Imagen destacada
+                width: 800,
+                height: 600,
+                alt: 'Entronización en la Basílica de Luján',
+            },
+        ],
+    },
+};
 
 export default function Entronizaciones() {
     const entronizaciones = [
@@ -122,10 +144,10 @@ export default function Entronizaciones() {
             descripcion:
                 '✨ El 8 de junio de 2025 a las 11 hs, en la Iglesia de Nuestra Señora de Luján de Chascomús, vivimos un momento verdaderamente extraordinario: la entronización de la imagen de Carlo Acutis.',
             imagenes: [
-                '/img/entronizaciones/chascomus/foto1.jpg',
-                '/img/entronizaciones/chascomus/foto2.jpg',
-                '/img/entronizaciones/chascomus/foto3.jpg',
-                '/img/entronizaciones/chascomus/foto4.jpg',
+                '/img/entronizaciones/chascomus/entronizacion-iglesia-lujan-chascomus-1.jpg',
+                '/img/entronizaciones/chascomus/entronizacion-iglesia-lujan-chascomus-2.jpg',
+                '/img/entronizaciones/chascomus/entronizacion-iglesia-lujan-chascomus-3.jpg',
+                '/img/entronizaciones/chascomus/entronizacion-iglesia-lujan-chascomus-4.jpg',
             ],
         },
     ];
@@ -169,9 +191,9 @@ export default function Entronizaciones() {
                                         src={src}
                                         width={320}
                                         height={180}
-                                        alt={`Entronización en ${ent.lugar} ${
-                                            i + 1
-                                        }`}
+                                        alt={`Entronización de la imagen del Beato Carlo Acutis en ${
+                                            ent.lugar
+                                        } (foto ${i + 1})`}
                                         className="rounded-lg shadow"
                                     />
                                 ))}
@@ -181,7 +203,7 @@ export default function Entronizaciones() {
                                 src={ent.imagen}
                                 width={320}
                                 height={180}
-                                alt={`Entronización en ${ent.lugar}`}
+                                alt={`Entronización de la imagen del Beato Carlo Acutis en ${ent.lugar}`}
                                 className="rounded-lg shadow"
                             />
                         ) : (

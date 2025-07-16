@@ -1,7 +1,4 @@
-# Block all crawlers for /accounts
 User-agent: *
-Disallow: /accounts
+Disallow: /accounts/
 
-# Allow all crawlers
-User-agent: *
-Allow: /
+Sitemap: https://carloacutis.net.ar/sitemap.xml

@@ -1,3 +1,26 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Un Momento de Silencio y Espera',
+  description: 'Comunicado sobre la pausa en la canonización de Carlo Acutis. Información sobre los próximos pasos y el compromiso del proyecto en este tiempo de espera.',
+  robots: {
+    index: false, // Le pedimos a Google que no indexe esta página por ahora
+    follow: true,
+  },
+  openGraph: {
+    title: 'Un Momento de Silencio y Espera',
+    description: 'Comunicado sobre la pausa en la canonización de Carlo Acutis.',
+    images: [
+      {
+        url: '/img/splash_bkg_01.jpg', // Una imagen de fondo que tienes
+        width: 1200,
+        height: 630,
+        alt: 'Fondo de la web del Proyecto Carlo Acutis',
+      },
+    ],
+  },
+};
+
 export default function SilencioEspera() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-4 hero">

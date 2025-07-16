@@ -9,10 +9,36 @@ import { notFound } from 'next/navigation';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Carlo Acutis en Chascomús: Historia, Devoción y Testimonio de Fe',
-    description:
-        'Descubre la vida y legado del Beato Carlo Acutis en Chascomús. Conoce su historia, la devoción en la ciudad y cómo su testimonio de fe impacta a jóvenes y creyentes en Argentina. Información sobre eventos, misas y recursos espirituales dedicados a Carlo Acutis en Chascomús.',
-};
+  title: {
+    default: 'Beato Carlo Acutis | Proyecto Chascomús',
+    template: '%s | Carlo Acutis Chascomús',
+  },
+  description: 'Sitio oficial del Proyecto Carlo Acutis en Chascomús. Encuentra oraciones, novenas, testimonios, y noticias sobre las entronizaciones de sus reliquias.',
+  metadataBase: new URL('https://carloacutis.net.ar'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'es': '/es',
+      'en': '/en',
+    },
+  },
+  openGraph: {
+    title: 'Beato Carlo Acutis | Proyecto Chascomús',
+    description: 'Sitio oficial del Proyecto Carlo Acutis en Chascomús. Oraciones, novenas, testimonios y noticias.',
+    url: 'https://carloacutis.net.ar',
+    siteName: 'Carlo Acutis Chascomús',
+    images: [
+      {
+        url: '/img/carlo-acutis.webp', // URL de tu imagen principal
+        width: 800,
+        height: 600,
+        alt: 'Imagen del Beato Carlo Acutis',
+      },
+    ],
+    locale: 'es_AR',
+    type: 'website',
+  },
+}
 
 interface RootLayoutProps {
     children: React.ReactNode;

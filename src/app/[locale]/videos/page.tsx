@@ -1,5 +1,24 @@
 import { useTranslations } from 'next-intl';
 import './videos.css';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Videos sobre Carlo Acutis',
+  description: 'Colección de videos sobre la vida, obra y devoción al Beato Carlo Acutis. Incluye entronizaciones, testimonios y documentales.',
+  openGraph: {
+    title: 'Videos sobre Carlo Acutis',
+    description: 'Colección de videos sobre la vida, obra y devoción al Beato Carlo Acutis.',
+    images: [
+      {
+        url: '/img/programmer.png', // Usaremos una imagen genérica que tienes
+        width: 512,
+        height: 512,
+        alt: 'Ilustración de un programador, representando a Carlo Acutis',
+      },
+    ],
+  },
+};
+
 
 const videos = [
     {

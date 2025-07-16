@@ -1,6 +1,25 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import './oracion.css';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Novena y Oración a Carlo Acutis',
+  description: 'Encuentra la novena completa y oraciones al Beato Carlo Acutis para pedir su intercesión. Meditaciones diarias para crecer en la fe.',
+  openGraph: {
+    title: 'Novena y Oración a Carlo Acutis',
+    description: 'Encuentra la novena completa y oraciones al Beato Carlo Acutis para pedir su intercesión.',
+    images: [
+      {
+        url: '/img/oracion/primer_dia.jpg', // Imagen del primer día como destacada
+        width: 400,
+        height: 300,
+        alt: 'Oración al Beato Carlo Acutis',
+      },
+    ],
+  },
+};
+
 
 export default function Oracion() {
     const t = useTranslations('Oracion'); // 'Oracion' debe coincidir con el namespace en es.json
