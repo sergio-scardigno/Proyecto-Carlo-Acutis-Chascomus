@@ -37,7 +37,7 @@ export default function Footer() {
                         <span className="icon">
                             <Image
                                 src="/img/programmer.png"
-                                alt="Desarrollado por Sergio Scardigno"
+                                alt="Ilustración de programador: Desarrollado por Sergio Scardigno"
                                 width={40}
                                 height={40}
                                 className="rounded-lg"
@@ -52,7 +52,7 @@ export default function Footer() {
                         src="/img/fibra.png"
                         width={100}
                         height={100}
-                        alt="Fibra TV"
+                        alt="Logo de Fibra TV, impulsor del proyecto Carlo Acutis Chascomús"
                         className="rounded-lg shadow-lg"
                     />
                     <small className="text-gray-600">

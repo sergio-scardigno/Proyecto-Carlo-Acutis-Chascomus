@@ -4,22 +4,23 @@ import './oracion.css';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Novena y Oración a Carlo Acutis',
-  description: 'Encuentra la novena completa y oraciones al Beato Carlo Acutis para pedir su intercesión. Meditaciones diarias para crecer en la fe.',
-  openGraph: {
     title: 'Novena y Oración a Carlo Acutis',
-    description: 'Encuentra la novena completa y oraciones al Beato Carlo Acutis para pedir su intercesión.',
-    images: [
-      {
-        url: '/img/oracion/primer_dia.jpg', // Imagen del primer día como destacada
-        width: 400,
-        height: 300,
-        alt: 'Oración al Beato Carlo Acutis',
-      },
-    ],
-  },
+    description:
+        'Encuentra la novena completa y oraciones al Beato Carlo Acutis para pedir su intercesión. Meditaciones diarias para crecer en la fe.',
+    openGraph: {
+        title: 'Novena y Oración a Carlo Acutis',
+        description:
+            'Encuentra la novena completa y oraciones al Beato Carlo Acutis para pedir su intercesión.',
+        images: [
+            {
+                url: '/img/oracion/primer_dia.jpg', // Imagen del primer día como destacada
+                width: 400,
+                height: 300,
+                alt: 'Oración al Beato Carlo Acutis',
+            },
+        ],
+    },
 };
-
 
 export default function Oracion() {
     const t = useTranslations('Oracion'); // 'Oracion' debe coincidir con el namespace en es.json
@@ -65,7 +66,9 @@ export default function Oracion() {
                     {/* Imagen al lado del texto en pantallas grandes, arriba en pantallas pequeñas */}
                     <Image
                         src={imagenes[index]}
-                        alt={t(`meditaciones.${dia}.titulo`)}
+                        alt={`Meditación: ${t(
+                            `meditaciones.${dia}.titulo`
+                        )} - Novena al Beato Carlo Acutis`}
                         width={400}
                         height={300}
                         className="w-full md:w-1/3 h-auto mb-4 md:mb-0 md:mr-4 rounded-lg" // Ajustamos el tamaño y el margen según el tamaño de pantalla

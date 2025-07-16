@@ -1,26 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-    title: 'Entronizaciones de Carlo Acutis',
-    description:
-        'Galería y detalles de las entronizaciones de las reliquias e imágenes del Beato Carlo Acutis en diversas comunidades y parroquias de Argentina.',
-    openGraph: {
-        title: 'Entronizaciones de Carlo Acutis',
-        description:
-            'Galería y detalles de las entronizaciones de las reliquias e imágenes del Beato Carlo Acutis en diversas comunidades y parroquias de Argentina.',
-        images: [
-            {
-                url: '/img/entronizaciones/Basílica%20de%20Luján.jpg', // Imagen destacada
-                width: 800,
-                height: 600,
-                alt: 'Entronización en la Basílica de Luján',
-            },
-        ],
-    },
-};
 
 export default function Entronizaciones() {
     const entronizaciones = [
@@ -191,7 +171,7 @@ export default function Entronizaciones() {
                                         src={src}
                                         width={320}
                                         height={180}
-                                        alt={`Entronización de la imagen del Beato Carlo Acutis en ${
+                                        alt={`Entronización del Beato Carlo Acutis en ${
                                             ent.lugar
                                         } (foto ${i + 1})`}
                                         className="rounded-lg shadow"
@@ -203,7 +183,7 @@ export default function Entronizaciones() {
                                 src={ent.imagen}
                                 width={320}
                                 height={180}
-                                alt={`Entronización de la imagen del Beato Carlo Acutis en ${ent.lugar}`}
+                                alt={`Entronización del Beato Carlo Acutis en ${ent.lugar}`}
                                 className="rounded-lg shadow"
                             />
                         ) : (

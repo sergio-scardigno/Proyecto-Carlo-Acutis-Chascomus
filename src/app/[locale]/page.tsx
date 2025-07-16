@@ -43,11 +43,11 @@ export default function Home() {
                     />
                 </div>
                 <p className="text-center text-gray-700 mb-2">
-                    Con profundo dolor y esperanza cristiana, despedimos al
-                    Papa Francisco, pastor humilde y cercano, que marcó una
-                    huella imborrable en la Iglesia y en nuestros corazones.
-                    Su testimonio de fe, amor y servicio permanecerá siempre
-                    entre nosotros.
+                    Con profundo dolor y esperanza cristiana, despedimos al Papa
+                    Francisco, pastor humilde y cercano, que marcó una huella
+                    imborrable en la Iglesia y en nuestros corazones. Su
+                    testimonio de fe, amor y servicio permanecerá siempre entre
+                    nosotros.
                 </p>
             </div>
 
@@ -56,9 +56,9 @@ export default function Home() {
                     Entronizaciones de Carlo Acutis
                 </h2>
                 <p className="text-center text-gray-700 mb-4">
-                    Descubre los lugares donde Carlo Acutis ha sido
-                    entronizado y cómo su testimonio sigue inspirando a
-                    jóvenes y fieles en todo el mundo.
+                    Descubre los lugares donde Carlo Acutis ha sido entronizado
+                    y cómo su testimonio sigue inspirando a jóvenes y fieles en
+                    todo el mundo.
                 </p>
                 <Link href={`/${locale}/entronizaciones`}>
                     <button className="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
@@ -72,8 +72,8 @@ export default function Home() {
                     Un momento de silencio y espera
                 </h2>
                 <p className="text-center text-yellow-700 mb-4">
-                    Reflexión especial sobre la partida del Papa Francisco y
-                    el futuro de la canonización de Carlo Acutis.
+                    Reflexión especial sobre la partida del Papa Francisco y el
+                    futuro de la canonización de Carlo Acutis.
                 </p>
                 <Link href={`/${locale}/silencio-espera`}>
                     <button className="px-6 py-2 bg-yellow-600 text-white rounded-lg shadow hover:bg-yellow-700 transition">
@@ -86,7 +86,7 @@ export default function Home() {
                 src="/img/carlo-acutis.webp"
                 width={500}
                 height={500}
-                alt="Picture of Carlo Acutis"
+                alt="Retrato del Beato Carlo Acutis en Chascomús, Argentina"
                 className="rounded-lg shadow-lg"
             />
 
