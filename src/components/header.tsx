@@ -51,7 +51,7 @@ export default function Header() {
                     <div className="lg:hidden flex-1 flex justify-end">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-red-500 focus:outline-none hover:text-black"
+                            className="text-blue-600 focus:outline-none hover:text-blue-800"
                         >
                             <svg
                                 className="w-6 h-6"
@@ -79,32 +79,32 @@ export default function Header() {
                 >
                     <Link
                         href={`/${locale}`}
-                        className="block text-red-500 py-2 lg:py-0 hover:text-black"
+                        className="block text-blue-600 py-2 lg:py-0 hover:text-blue-800"
                     >
                         {t('home')}
                     </Link>
 
                     <Link
                         href={`/${locale}/oracion`}
-                        className="block text-red-500 py-2 lg:py-0 hover:text-black"
+                        className="block text-blue-600 py-2 lg:py-0 hover:text-blue-800"
                     >
                         {t('url')}
                     </Link>
                     <Link
                         href={`/${locale}/videos`}
-                        className="block text-red-500 py-2 lg:py-0 hover:text-black"
+                        className="block text-blue-600 py-2 lg:py-0 hover:text-blue-800"
                     >
                         {t('videos')}
                     </Link>
                     <Link
                         href={`/${locale}/testimonios`}
-                        className="block text-red-500 py-2 lg:py-0 hover:text-black"
+                        className="block text-blue-600 py-2 lg:py-0 hover:text-blue-800"
                     >
                         {t('testimonios')}
                     </Link>
                     <Link
                         href={`/${locale}/entronizaciones`}
-                        className="block text-red-500 py-2 lg:py-0 hover:text-black"
+                        className="block text-blue-600 py-2 lg:py-0 hover:text-blue-800"
                     >
                         {t('entronizaciones')}
                     </Link>

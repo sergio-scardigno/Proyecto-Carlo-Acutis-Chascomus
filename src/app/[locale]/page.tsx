@@ -23,9 +23,19 @@ export default function Home() {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-4 hero">
-            <h1 className="mb-4 font-semibold text-center font-zapfino">
-                {t('title')}
-            </h1>
+            <div className="mb-4 flex justify-center">
+                <Image
+                    src="/img/logo/logo.png"
+                    width={300}
+                    height={150}
+                    alt="Logo Carlo Acutis"
+                    className="rounded-full shadow-lg"
+                    style={{
+                        objectFit: 'contain',
+                        backgroundColor: 'transparent'
+                    }}
+                />
+            </div>
             <p className="text-center mb-4">{t('description')}</p>
             <hr className="w-full border-t border-gray-300 my-4" />
 
@@ -49,6 +59,44 @@ export default function Home() {
                     testimonio de fe, amor y servicio permanecerá siempre entre
                     nosotros.
                 </p>
+            </div>
+
+            <div className="w-full max-w-4xl mb-8 p-6 border border-blue-400 rounded-lg shadow-lg bg-blue-50 flex flex-col items-center">
+                <h2 className="text-2xl font-bold mb-4 text-center text-blue-800">
+                    {t('entronizacion-chascomus-title')}
+                </h2>
+                <div className="flex flex-col items-center mb-4">
+                    <Image
+                        src="/img/chascomus/carlo-acutis-chascomus.jpg"
+                        width={300}
+                        height={400}
+                        alt="Entronización de Carlo Acutis en Chascomús"
+                        className="rounded-lg shadow mb-4"
+                    />
+                    <div className="flex flex-col space-y-3 text-center max-w-2xl">
+                        <p className="text-gray-700">
+                            {t('entronizacion-chascomus-date')}
+                        </p>
+                        <p className="text-gray-700">
+                            {t('entronizacion-chascomus-image')}
+                        </p>
+                        <p className="text-gray-700">
+                            {t('entronizacion-chascomus-celebracion')}
+                        </p>
+                        <p className="text-gray-700">
+                            {t('entronizacion-chascomus-actividades')}
+                        </p>
+                        <p className="text-gray-700">
+                            {t('entronizacion-chascomus-clima')}
+                        </p>
+                        <p className="text-gray-700">
+                            {t('entronizacion-chascomus-agradecimiento')}
+                        </p>
+                        <p className="text-gray-700 font-semibold">
+                            {t('entronizacion-chascomus-final')}
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div className="w-full max-w-2xl mb-8 p-6 border border-gray-300 rounded-lg shadow-lg bg-white flex flex-col items-center">

@@ -120,7 +120,7 @@ const ContactForm = () => {
                             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
                         {errors.email && (
-                            <p className="text-red-500 text-sm mt-1">
+                            <p className="text-blue-600 text-sm mt-1">
                                 {errors.email}
                             </p>
                         )}
@@ -138,7 +138,7 @@ const ContactForm = () => {
                             placeholder="Agrega tu teléfono"
                         />
                         {errors.tel && (
-                            <p className="text-red-500 text-sm mt-1">
+                            <p className="text-blue-600 text-sm mt-1">
                                 {errors.tel}
                             </p>
                         )}
