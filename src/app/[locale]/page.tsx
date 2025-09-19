@@ -7,6 +7,7 @@ import Timeline from '../../components/timeline-carlo-acutis';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import ContactForm from '../../components/ContactForm';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
     const t = useTranslations('IndexPage');
@@ -22,7 +23,47 @@ export default function Home() {
     }
 
     return (
+
+        
         <div className="flex flex-col items-center justify-center min-h-screen p-4 hero">
+
+            {/* Tarjeta de Canonización */}
+            <div className="w-full max-w-2xl mb-8 p-6 bg-gradient-to-r from-yellow-50 to-blue-50 rounded-xl shadow-lg border border-yellow-200 hover:shadow-xl transition-shadow duration-300">
+                <div className="flex flex-col md:flex-row items-center gap-6">
+                    <div className="md:w-1/3">
+                        <div className="relative h-48 w-full rounded-lg overflow-hidden">
+                            <Image
+                                src="/img/canonizacion/canonizacion-carlo.jpg"
+                                alt="Carlo Acutis canonizado"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 33vw"
+                            />
+                        </div>
+                    </div>
+                    <div className="md:w-2/3">
+                        <h2 className="text-2xl font-bold text-amber-800 mb-2">
+                            ¡Carlo Acutis ya es santo!
+                        </h2>
+                        <p className="text-gray-700 mb-4">
+                            La Iglesia Católica celebra el primer milenial canonizado. Un día histórico en la Plaza de San Pedro, donde el Papa León XIV presidió la ceremonia.
+                        </p>
+                        <Link 
+                            href={`/${locale}/canonizacion`}
+                            className="inline-flex items-center px-4 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors"
+                        >
+                            Leer más
+                            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+
+            <hr className="w-full border-t border-gray-300 my-4" />
+
+
             <div className="mb-4 flex justify-center">
                 <Image
                     src="/img/logo/logo.png"
@@ -151,7 +192,7 @@ export default function Home() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
 
-            <hr className="w-full border-t border-gray-300 my-4" />
+
 
             <h2 className="text-base font-bold mb-4 text-center text-gray-800 tracking-wider drop-shadow-lg mt-6">
                 {t('invitation')}
