@@ -16,7 +16,7 @@ const SocialMedia = () => {
                 />
             </a>
             <a
-                href="https://www.instagram.com/carloacutischascomus/"
+                href="https://www.instagram.com/sancarloacutischascomus/"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -26,7 +26,7 @@ const SocialMedia = () => {
                 />
             </a>
             <a
-                href="https://www.tiktok.com/@carloacutischasmo"
+                href="https://www.tiktok.com/@sancarloacutischascomus"
                 target="_blank"
                 rel="noopener noreferrer"
             >
