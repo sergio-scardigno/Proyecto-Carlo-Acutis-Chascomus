@@ -1,19 +1,98 @@
 {
     "IndexPage": {
-        "title": "Carlo Acutis's web page",
-        "description": "Welcome to Carlos Acutis' website",
-        "title-prayer": "Prayer to Blessed Carlo Acutis",
-        "prayer": "O God, our Father, thank you for having given us Carlo, a model of life for young people and a message of love for all. You have made her fall in love with your Son Jesus, making the Eucharist her 'highway to heaven'. You have given Mary as a beloved Mother, and you have made her become a singer of her tenderness with the Rosary. Accept his intercession for us. He looks above all to the poor, whom he loved and helped. [Grant to me also, through his intercession, the grace I need...] And make our joy full, leading Carlo among the saints of the universal Church, so that his smile may continue to shine for us and for the glory of your name. Amen Pray an Our Father, a Hail Mary and a Glory Be.",
-        "bibliography-intro": "This content has been created by a third party, collecting video clips from the documentary 'La mia autostrada per il Cielo' and various images available on Carlo's official website.",
-        "ceremony": "Blessing of the image of Blessed Carlo Acutis and inauguration of free Wi-Fi in Chascomús.",
-        "monsenor": "Enthronement of the Image of Carlo Acutis in Chascomús",
-        "description2": "In this video, the parish priest Rafael of the Santísimo Sacramento church in CABA shares his reflections and blessings in the framework of the enthronement of the image of Blessed Carlo Acutis in Chascomús. With an emotional message, Father Rafael highlights the importance of Carlo Acutis as a model of holiness for young people and his devotion to the Eucharist. Don't miss this beautiful ceremony dedicated to the one who was called the 'cyber apostle of the Eucharist'!",
-        "obispo": "Invitation from Bishop Juan Ignacio Liébana to the Enthronement of Carlo Acutis in Chascomús",
-        "description3": "The Bishop of Chascomús, Juan Ignacio Liébana, extends a warm invitation to the entire community of Chascomús to participate in the enthronement of the image of Blessed Carlo Acutis on October 10. This special event will celebrate the life and legacy of this young blessed who inspired so many with his love for the Eucharist and his dedication to faith in the digital age. Don't miss this day of faith and communion!",
-        "carlo-acutis-IA": "Who was Carlo Acutis?",
-        "invitation": "Please join this amazing Carlo Acutis group! This is a space where we can inspire each other and grow closer to our faith, just as Carlo taught us through his life example. Every meeting is an opportunity to grow spiritually, share with others, and discover new ways to live our faith on a daily basis. No matter where you are on your spiritual journey, you will always be welcome here. Join us and experience the joy of being part of a community that seeks to follow in the footsteps of a young saint of our time! We look forward to seeing you!",
-        "whatsapp-group": "Join the WhatsApp group",
-        "papa-francisco": "Pope Francis announces the canonization dates for Carlo Acutis and Pier Giorgio Frassati"
+        "hero": {
+            "imageAlt": "Portrait of Blessed Carlo Acutis in Chascomús, Argentina",
+            "eyebrow": "Carlo Acutis Project Chascomús",
+            "title": "A community walking with Carlo",
+            "subtitle": "We celebrate the life of the blessed and accompany his mission through prayer, service, and creative pastoral action. Find resources, stories, and ways to ignite faith.",
+            "primaryCta": "Join the movement",
+            "secondaryCta": "Follow his story"
+        },
+        "highlights": {
+            "prayer": {
+                "eyebrow": "Daily prayer",
+                "title": "Novena guides to pray with Carlo",
+                "description": "Download materials, meditations, and proposals to animate adoration, youth groups, and catechesis moments.",
+                "cta": "Go to prayers"
+            },
+            "entrance": {
+                "eyebrow": "Enthronements",
+                "title": "A traveling relic across the country",
+                "description": "Explore the living map of communities that welcome the relic and learn how to join the mission.",
+                "cta": "View calendar"
+            },
+            "resources": {
+                "eyebrow": "Pastoral resources",
+                "title": "Ready-to-share multimedia content",
+                "description": "Presentations, bibliographies, and digital kits for schools, movements, and youth ministry teams.",
+                "cta": "Browse library"
+            }
+        },
+        "news": {
+            "eyebrow": "News & statements",
+            "title": "Step by step with Carlo and the Church",
+            "cta": "See more",
+            "pope": {
+                "eyebrow": "Special statement",
+                "title": "A time of prayer after Pope Francis' passing",
+                "description": "Revisit the full message about the pause in the canonization process and our commitment to keep evangelizing with hope."
+            },
+            "events": {
+                "eyebrow": "Pastoral agenda",
+                "title": "Upcoming gatherings and vigils",
+                "description": "Discover celebrations, adoration vigils, and youth events inspired by Carlo."
+            }
+        },
+        "agenda": {
+            "eyebrow": "Living schedule",
+            "title": "What is coming next",
+            "cta": "Open full agenda",
+            "item1": {
+                "date": "JUNE 8 • 11 AM",
+                "title": "Enthronement at Our Lady of Luján",
+                "place": "Chascomús, Buenos Aires"
+            },
+            "item2": {
+                "date": "JUNE 13 • 8 PM",
+                "title": "Youth vigil with Eucharistic adoration",
+                "place": "Nuestra Señora de la Merced Cathedral"
+            },
+            "item3": {
+                "date": "JUNE 21 • 7 PM",
+                "title": "Virtual gathering of devotees and leaders",
+                "place": "Project online hall"
+            }
+        },
+        "entrancesPreview": {
+            "eyebrow": "Recent enthronements",
+            "title": "Carlo's footprint in the communities",
+            "description": "Each enthronement opens new paths of mission and service. Take a look at some celebrations we continue to cherish.",
+            "cta": "Explore all enthronements",
+            "lujan": "The National Basilica embraced the relic with an all-night vigil.",
+            "chascomus": "Our cathedral is a permanent home for pilgrims and young people.",
+            "lasArmas": "A rural community set ablaze by Carlo's visit."
+        },
+        "journey": {
+            "eyebrow": "Journey",
+            "title": "Carlo's highway to heaven",
+            "description": "Relive the milestones that shaped his testimony and discover how they inspire today's projects."
+        },
+        "video": {
+            "eyebrow": "Stories that inspire",
+            "title": "Carlo through the eyes of those who met him",
+            "description": "A visual narrative on his life, Eucharistic passion, and digital mission."
+        },
+        "invitation": {
+            "eyebrow": "Carlo Acutis community",
+            "title": "We evangelize through innovation",
+            "copy": "Every gathering is a chance to accompany young people, share testimonies, and bring Jesus' love to new digital courtyards."
+        },
+        "contact": {
+            "eyebrow": "Pastoral contact",
+            "title": "Want to join or host the relic?",
+            "description": "Send us a message and let's plan together. We can support enthronements, retreats, multimedia workshops, and mission spaces."
+        },
+        "whatsapp-group": "Join the WhatsApp group"
     },
     "Oracion": {
         "title": "Novena to Blessed Carlo Acutis",
@@ -79,11 +158,293 @@
         "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
     },
     "Navigation": {
-        "home": "Home",
-        "url": "Novena",
-        "videos": "Videos",
-        "testimonios": "Testimonios",
-        "entronizaciones": "Entronizaciones"
+        "toggleNavigation": "Toggle navigation",
+        "drawerTitle": "Main menu",
+        "closeNavigation": "Close menu",
+        "groups": {
+            "liveFaith": "Live the Faith",
+            "resources": "Resources",
+            "community": "Community"
+        },
+        "links": {
+            "home": "Home",
+            "oracion": "Novena & prayer",
+            "testimonios": "Testimonials",
+            "intenciones": "Prayer wall",
+            "entronizaciones": "Enthronements",
+            "videos": "Videos",
+            "library": "Digital library",
+            "events": "Events",
+            "contact": "Pastoral contact"
+        }
+    },
+    "PrayerWallPage": {
+        "eyebrow": "Prayer wall",
+        "title": "Lighting digital candles with Carlo",
+        "intro": "Every intention left here becomes a gesture of communion. We pray for one another and keep track of mission fruits so we can keep moving forward together.",
+        "pillars": [
+            {
+                "title": "Continuous prayer",
+                "description": "Intentions are shared weekly with adoration groups and novena teams."
+            },
+            {
+                "title": "Active listening",
+                "description": "Pastoral leaders respond to urgent requests and accompany personal journeys."
+            },
+            {
+                "title": "Mission impact",
+                "description": "The data helps coordinate relic visits, workshops, and outreach campaigns."
+            }
+        ],
+        "notice": "Content is moderated before being posted on social media. For special requests write to",
+        "contact": "carloacutischascomus@gmail.com"
+    },
+    "PrayerWall": {
+        "anonymous": "Anonymous devotee",
+        "form": {
+            "title": "Share your intention",
+            "subtitle": "Choose whether it is public or anonymous. The community commits to pray for every request.",
+            "name": "Name or community",
+            "namePlaceholder": "E.g. Confirmation group from Chascomús",
+            "category": "How would you like to frame the intention?",
+            "message": "Your intention",
+            "messagePlaceholder": "Tell us who or what we are praying for together...",
+            "anonymous": "I prefer to remain anonymous",
+            "submit": "Light my candle",
+            "submitting": "Sending…",
+            "successPending": "Thanks for sharing. The intention is pending pastoral moderation.",
+            "error": "We couldn’t store your intention. Please try again later.",
+            "validationMessage": "Please describe your intention with a few words.",
+            "moderationNotice": "Intentions are published after a pastoral review. Please avoid sensitive data or links."
+        },
+        "categories": {
+            "gratitude": "Thanksgiving",
+            "petition": "Petition",
+            "youth": "Youth",
+            "family": "Families"
+        },
+        "stats": {
+            "title": "Our prayer chain",
+            "subtitle": "We add intentions to the mission map and present them in every community adoration.",
+            "intentions": "active intentions",
+            "prayers": "prayers offered",
+            "notice": "Approved intentions live on our secure server and remain under pastoral moderation."
+        },
+        "filters": {
+            "all": "All categories",
+            "search": "Search by name or intention"
+        },
+        "wall": {
+            "title": "Shared intentions",
+            "subtitle": "Offer a prayer and keep the flame of hope alive.",
+            "offerPrayer": "Pray for this intention",
+            "praying": "Praying…",
+            "empty": "No intentions match this filter yet. Be the first to share yours!",
+            "loading": "Loading approved intentions…",
+            "fetchError": "We couldn’t load the wall right now. Please refresh the page.",
+            "prayerError": "We couldn’t add your prayer. Please try again later."
+        }
+    },
+    "EnthronementsPage": {
+        "hero": {
+            "eyebrow": "Mission map",
+            "title": "Enthronements of Carlo Acutis",
+            "subtitle": "Every community that welcomes the relic opens a new chapter of evangelization. Filter by region or search by name to explore stories and photos."
+        },
+        "filters": {
+            "region": "Region",
+            "all": "All",
+            "search": "Search",
+            "placeholder": "E.g. Chascomús, Cathedral...",
+            "reset": "Clear filters"
+        },
+        "stats": {
+            "total": "{count} enthronements listed"
+        },
+        "gallery": {
+            "expand": "Open gallery",
+            "collapse": "Hide gallery",
+            "alt": "{place} gallery (image {index})"
+        },
+        "empty": "No enthronements match these filters. Try another combination."
+    },
+    "EventsPage": {
+        "hero": {
+            "eyebrow": "Schedule",
+            "title": "Upcoming gatherings and missions",
+            "subtitle": "We coordinate relic visits, youth vigils, and multimedia workshops. Discover what is coming next and invite your community."
+        },
+        "upcomingTitle": "Upcoming events",
+        "pastTitle": "Highlights we celebrated",
+        "upcoming": [
+            {
+                "date": "JUNE 8 • 11 AM",
+                "title": "Enthronement at Our Lady of Luján",
+                "location": "Chascomús, Buenos Aires",
+                "description": "Procession, solemn Mass, and live streaming for diocesan schools.",
+                "emphasis": "Intentions received until June 5."
+            },
+            {
+                "date": "JUNE 13 • 8 PM",
+                "title": "\"Highway to Heaven\" youth vigil",
+                "location": "Nuestra Señora de la Merced Cathedral",
+                "description": "Adoration, testimonies, and late-night outreach with Caritas."
+            },
+            {
+                "date": "JUNE 21 • 7 PM",
+                "title": "National gathering of devotees",
+                "location": "Project virtual hall",
+                "description": "Interactive livestream with leaders from Buenos Aires, Tucumán, Córdoba, and Mendoza.",
+                "emphasis": "Free registration, limited seats."
+            }
+        ],
+        "past": [
+            {
+                "date": "MAY 10 • 7 PM",
+                "title": "Prayer-concert in Castelli",
+                "location": "Santa Rosa de Lima Parish",
+                "description": "Over 300 young people shared a vigil and street mission."
+            },
+            {
+                "date": "APR 23 • 6 PM",
+                "title": "Enthronement at UCA",
+                "location": "Carlo Acutis Oratory, Puerto Madero Campus",
+                "description": "A permanent prayer space for students was inaugurated."
+            },
+            {
+                "date": "MAR 12 • 5 PM",
+                "title": "Relic tour through General Guido",
+                "location": "Nuestra Señora de la Merced Parish",
+                "description": "Youth visited schools and homes with the traveling relic."
+            },
+            {
+                "date": "FEB 28 • 8 PM",
+                "title": "Digital testimony vigil",
+                "location": "Official livestream",
+                "description": "18 testimonies of graces received through Carlo were shared."
+            }
+        ],
+        "sidebar": {
+            "title": "Want to add a stop?",
+            "description": "We coordinate pastoral logistics, press, and resources to enthrone the relic or host multimedia workshops.",
+            "primaryCta": "Message us on WhatsApp",
+            "secondaryCta": "See contacts"
+        }
+    },
+    "ContactPage": {
+        "hero": {
+            "eyebrow": "Pastoral contact",
+            "title": "Let’s coordinate the mission together",
+            "subtitle": "We can support enthronements, retreats, multimedia workshops, and communication plans. Choose your preferred channel or send us a note."
+        },
+        "channelsTitle": "Direct channels",
+        "channelsSubtitle": "We reply within 24 hours. For liturgical emergencies or relic visits, use WhatsApp.",
+        "channels": [
+            {
+                "label": "WhatsApp",
+                "value": "+54 9 221 409 9792",
+                "href": "https://wa.me/+5492214099792"
+            },
+            {
+                "label": "General email",
+                "value": "carloacutischascomus@gmail.com",
+                "href": "mailto:carloacutischascomus@gmail.com"
+            },
+            {
+                "label": "Instagram",
+                "value": "@carloacutischascomus",
+                "href": "https://www.instagram.com/carloacutischascomus/"
+            }
+        ],
+        "availability": "Availability: Monday to Friday from 9 a.m. to 6 p.m. (GMT-3). Weekend responses depend on pastoral agenda.",
+        "formTitle": "Send us a message",
+        "formSubtitle": "Leave your details and we'll coordinate the proposal together."
+    },
+    "LibraryPage": {
+        "hero": {
+            "eyebrow": "Pastoral resources",
+            "title": "Carlo Acutis digital library",
+            "subtitle": "Ready-to-share materials for parishes, schools, and communities. Request full access to download presentations, worksheets, and media assets."
+        },
+        "categories": [
+            {
+                "title": "Liturgical animation",
+                "description": "Scripts, songs, and adaptations for youth Masses and Eucharistic adoration.",
+                "resources": [
+                    { "label": "Eucharistic adoration guide for teenagers", "type": "PDF" },
+                    { "label": "Carlo Acutis digital songbook", "type": "Playlist" },
+                    { "label": "Digital candle ambience kit", "type": "Visual pack" }
+                ]
+            },
+            {
+                "title": "Education & catechesis",
+                "description": "Teaching sequences and activities for primary, secondary, and young adults.",
+                "resources": [
+                    { "label": "\"Saints in the digital age\" workshop series", "type": "Presentation" },
+                    { "label": "Didactic sheets on the Eucharist", "type": "Workbook" },
+                    { "label": "Infographics for school networks", "type": "Graphic pack" }
+                ]
+            },
+            {
+                "title": "Communication & media",
+                "description": "Multimedia assets to announce enthronements, conferences, and testimonies.",
+                "resources": [
+                    { "label": "Press kit for enthronements", "type": "ZIP" },
+                    { "label": "Instagram stories templates", "type": "Canva" },
+                    { "label": "Audio & video testimonies", "type": "Playlist" }
+                ]
+            }
+        ],
+        "actions": {
+            "request": "Request access"
+        },
+        "cta": {
+            "title": "Need another format or language?",
+            "subtitle": "We also produce tailored resources for dioceses and movements.",
+            "primary": "Write to the team",
+            "secondary": "See contact options"
+        }
+    },
+    "AdminIntentions": {
+        "title": "Intention moderation",
+        "description": "Use this panel to review, approve, or reject prayer requests. The admin token is stored locally in this browser.",
+        "tokenLabel": "Admin token",
+        "tokenPlaceholder": "Paste your secure token here…",
+        "saveToken": "Save token",
+        "statusLabel": "Status to display",
+        "refresh": "Refresh list",
+        "empty": "No intentions with the selected status.",
+        "loading": "Loading intentions…",
+        "errors": {
+            "missingToken": "You must provide the admin token to continue.",
+            "load": "We couldn’t load the intentions. Check the token or reload the page.",
+            "update": "We couldn’t update the intention. Please try again.",
+            "delete": "We couldn’t delete the intention. Please try again."
+        },
+        "table": {
+            "created": "Created",
+            "category": "Category",
+            "message": "Message",
+            "status": "Status",
+            "actions": "Actions",
+            "prayerCount": "Prayers"
+        },
+        "actions": {
+            "approve": "Approve",
+            "reject": "Reject",
+            "delete": "Delete",
+            "confirm": "Are you sure?"
+        },
+        "statuses": {
+            "pending": "Pending",
+            "approved": "Approved",
+            "rejected": "Rejected"
+        },
+        "messages": {
+            "tokenSaved": "Token saved.",
+            "updated": "Intention updated.",
+            "deleted": "Intention deleted."
+        }
     },
     "Videos": {
         "home": "Inicio",
@@ -125,6 +486,12 @@
             "cardTitle": "Holy Mass at the Cathedral",
             "cardSubtitle": "\"Nuestra Señora de la Merced\" Cathedral",
             "cardDetailedText": "Upon arriving at the Cathedral, a Holy Mass will be celebrated in honor of Carlo Acutis, who passed away on October 10, 2016, at the age of 15."
+        },
+        "controls": {
+            "first": "Jump to start",
+            "last": "Jump to end",
+            "next": "Next",
+            "previous": "Previous"
         }
     },
     "entronizaciones": {

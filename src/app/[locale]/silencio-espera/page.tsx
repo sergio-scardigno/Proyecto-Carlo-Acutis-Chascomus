@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function SilencioEspera() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-4 hero">
-            <h1 className="mb-8 font-semibold text-center font-zapfino text-3xl text-yellow-800">
+            <h1 className="mb-8 font-semibold text-center font-zapfino text-2xl text-yellow-800">
                 UN MOMENTO DE SILENCIO Y ESPERA
             </h1>
             <div className="max-w-2xl bg-yellow-50 border border-yellow-400 rounded-lg shadow-lg p-6">

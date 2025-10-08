@@ -1,18 +1,98 @@
 {
     "IndexPage": {
-        "title": "Web de Carlo Acutis",
-        "description": "Bienvenidos a la web de Carlos Acutis",
-        "title-prayer": "Oración al Beato Carlo Acutis",
-        "prayer": "Oh Dios, nuestro Padre, gracias por habernos dado a Carlo, modelo de vida para los jóvenes y mensaje de amor para todos. Tú has hecho que se enamore de tu hijo Jesús, haciendo de la Eucaristía su «autopista hacia el cielo». Tú le has dado a María como Madre muy amada, y has hecho que con el Rosario se convirtiese en un cantor de su ternura. Acoge su intercesión por nosotros. Mira sobre todo a los pobres, a quienes él amó y ayudó. [También a mí concédeme, por su intercesión, la gracia que necesito...] Y haz que nuestra alegría sea plena, conduciendo a Carlo entre los santos de la Iglesia universal, a fin de que su sonrisa siga resplandeciendo para nosotros y para gloria de tu nombre. Amén Rezar un Padre Nuestro, un Ave María y un Gloria.",
-        "ceremony": "Bendición de la imagen del Beato Carlo Acutis e inauguración del wi-fi gratuito en Chascomús.",
-        "monsenor": "Entronización de la Imagen de Carlo Acutis en Chascomús",
-        "description2": "En este video, el párroco Rafael de la iglesia Santísimo Sacramento en CABA comparte sus reflexiones y bendiciones en el marco de la entronización de la imagen del beato Carlo Acutis en Chascomús. Con un emotivo mensaje, el padre Rafael resalta la importancia de Carlo Acutis como modelo de santidad para los jóvenes y su devoción por la Eucaristía. ¡No te pierdas esta hermosa ceremonia dedicada a quien fue llamado el 'ciberapóstol de la Eucaristía'!",
-        "obispo": "Invitación del Obispo Juan Ignacio Liébana a la Entronización de Carlo Acutis en Chascomús",
-        "description3": "El Obispo de Chascomús, Juan Ignacio Liébana, extiende una cálida invitación a toda la comunidad de Chascomús para participar de la entronización de la imagen del Beato Carlo Acutis el próximo 10 de octubre. En este evento especial, se celebrará la vida y el legado de este joven beato que inspiró a tantos con su amor por la Eucaristía y su dedicación a la fe en la era digital. ¡No te pierdas esta jornada de fe y comunión!",
-        "carlo-acutis-IA": "Quien fue Carlo Acutis?",
-        "invitation": "Anímense a ser parte de este increíble grupo de Carlo Acutis! Este es un espacio donde podemos inspirarnos mutuamente y acercarnos más a nuestra fe, tal como Carlo nos enseñó con su ejemplo de vida. Cada encuentro es una oportunidad para crecer espiritualmente, compartir con otros y descubrir nuevas formas de vivir nuestra fe en el día a día. No importa en qué punto de tu camino espiritual estés, aquí siempre serás bienvenido. ¡Súmate y experimenta la alegría de formar parte de una comunidad que busca seguir los pasos de un joven santo de nuestro tiempo! ¡Los esperamos!",
-        "whatsapp-group": "Unirme al grupo de Whatsapp",
-        "papa-francisco": "El Papa Francisco anunció las fechas de canonización de Carlo Acutis y Pier Giorgio Frassati"
+        "hero": {
+            "imageAlt": "Retrato del Beato Carlo Acutis en Chascomús, Argentina",
+            "eyebrow": "Proyecto Carlo Acutis Chascomús",
+            "title": "Una comunidad que camina con Carlo",
+            "subtitle": "Celebramos la vida del beato y acompañamos su misión con oración, servicio y creatividad pastoral. Aquí encontrarás recursos, historias y espacios para encender la fe.",
+            "primaryCta": "Sumarme al movimiento",
+            "secondaryCta": "Recorrer su historia"
+        },
+        "highlights": {
+            "prayer": {
+                "eyebrow": "Oración cotidiana",
+                "title": "Novenas y guías para rezar junto a Carlo",
+                "description": "Descarga materiales, meditaciones y propuestas para animar momentos de adoración, grupos juveniles y catequesis.",
+                "cta": "Ir a oraciones"
+            },
+            "entrance": {
+                "eyebrow": "Entronizaciones",
+                "title": "Reliquias itinerantes en todo el país",
+                "description": "Conoce el mapa vivo de comunidades que reciben la reliquia y descubre cómo sumarte a la misión.",
+                "cta": "Ver calendario"
+            },
+            "resources": {
+                "eyebrow": "Recursos pastorales",
+                "title": "Material multimedia listo para compartir",
+                "description": "Presentaciones, bibliografía y kits digitales para colegios, movimientos y agentes de pastoral juvenil.",
+                "cta": "Explorar biblioteca"
+            }
+        },
+        "news": {
+            "eyebrow": "Noticias y comunicados",
+            "title": "Paso a paso con Carlo y la Iglesia",
+            "cta": "Leer más",
+            "pope": {
+                "eyebrow": "Comunicado especial",
+                "title": "Tiempo de oración tras la partida del Papa Francisco",
+                "description": "Revivimos el mensaje completo sobre la pausa en la canonización y el compromiso de seguir evangelizando con esperanza."
+            },
+            "events": {
+                "eyebrow": "Agenda pastoral",
+                "title": "Próximos encuentros y vigilias",
+                "description": "Descubre celebraciones, vigilias de adoración y jornadas juveniles inspiradas en Carlo."
+            }
+        },
+        "agenda": {
+            "eyebrow": "Agenda viva",
+            "title": "Momentos que se vienen",
+            "cta": "Ver agenda completa",
+            "item1": {
+                "date": "8 JUN • 11 hs",
+                "title": "Entronización en Nuestra Señora de Luján",
+                "place": "Chascomús, Buenos Aires"
+            },
+            "item2": {
+                "date": "13 JUN • 20 hs",
+                "title": "Vigilia juvenil con adoración eucarística",
+                "place": "Catedral Nuestra Señora de la Merced"
+            },
+            "item3": {
+                "date": "21 JUN • 19 hs",
+                "title": "Encuentro virtual de devotos y referentes",
+                "place": "Sala online del proyecto"
+            }
+        },
+        "entrancesPreview": {
+            "eyebrow": "Entronizaciones recientes",
+            "title": "Huella de Carlo en las comunidades",
+            "description": "Cada entronización abre caminos de misión y servicio. Mira algunos momentos que seguimos celebrando.",
+            "cta": "Explorar todas las entronizaciones",
+            "lujan": "La Basílica Nacional abrazó la reliquia con una vigilia multitudinaria.",
+            "chascomus": "Nuestra catedral es hogar permanente para peregrinos y jóvenes.",
+            "lasArmas": "Una comunidad rural que se enciende con la visita de Carlo."
+        },
+        "journey": {
+            "eyebrow": "Trayectoria",
+            "title": "La autopista al cielo de Carlo",
+            "description": "Revive los hitos que marcaron su testimonio y descubre cómo inspiran proyectos actuales."
+        },
+        "video": {
+            "eyebrow": "Historias que inspiran",
+            "title": "Carlo visto por quienes lo conocieron",
+            "description": "Un relato audiovisual sobre su vida, su pasión eucarística y su misión digital."
+        },
+        "invitation": {
+            "eyebrow": "Comunidad Carlo Acutis",
+            "title": "Somos una red que evangeliza innovando",
+            "copy": "Cada encuentro es una oportunidad para acompañar a los jóvenes, compartir testimonios y llevar el amor de Jesús a los nuevos patios digitales."
+        },
+        "contact": {
+            "eyebrow": "Contacto pastoral",
+            "title": "¿Querés sumarte o llevar la reliquia?",
+            "description": "Dejanos tu mensaje y coordinemos juntos. Podemos acompañar entronizaciones, retiros, talleres multimedia y espacios de misión."
+        },
+        "whatsapp-group": "Unirme al grupo de Whatsapp"
     },
     "Oracion": {
         "title": "Novena al Beato Carlo Acutis",
@@ -78,11 +158,293 @@
         "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
     },
     "Navigation": {
-        "home": "Home",
-        "url": "Novena",
-        "videos": "Videos",
-        "testimonios": "Testimonios",
-        "entronizaciones": "Entronizaciones"
+        "toggleNavigation": "Abrir menú",
+        "drawerTitle": "Menú principal",
+        "closeNavigation": "Cerrar menú",
+        "groups": {
+            "liveFaith": "Vivir la fe",
+            "resources": "Recursos",
+            "community": "Comunidad"
+        },
+        "links": {
+            "home": "Inicio",
+            "oracion": "Novena y oración",
+            "testimonios": "Testimonios",
+            "intenciones": "Muro de intenciones",
+            "entronizaciones": "Entronizaciones",
+            "videos": "Videos",
+            "library": "Biblioteca digital",
+            "events": "Eventos",
+            "contact": "Contacto pastoral"
+        }
+    },
+    "PrayerWallPage": {
+        "eyebrow": "Muro de intenciones",
+        "title": "Encendemos velas digitales para Carlo",
+        "intro": "Cada mensaje que dejas aquí es un gesto de comunión. Rezamos unos por otros y registramos los frutos de la misión para seguir caminando juntos.",
+        "pillars": [
+            {
+                "title": "Oración continua",
+                "description": "Las intenciones se comparten semanalmente con los grupos de adoración y novenas."
+            },
+            {
+                "title": "Escucha activa",
+                "description": "Referentes pastorales responden a los pedidos urgentes y acompañan procesos personales."
+            },
+            {
+                "title": "Impacto misionero",
+                "description": "Los datos ayudan a organizar visitas de la reliquia, talleres y campañas solidarias."
+            }
+        ],
+        "notice": "La información será moderada antes de ser publicada en redes. Para pedidos especiales escribinos a",
+        "contact": "carloacutischascomus@gmail.com"
+    },
+    "PrayerWall": {
+        "anonymous": "Devoto anónimo",
+        "form": {
+            "title": "Compartí tu intención",
+            "subtitle": "Elegí si querés que sea pública o anónima. La comunidad se compromete a rezar por cada pedido.",
+            "name": "Nombre o comunidad",
+            "namePlaceholder": "Ej. Grupo de confirmación de Chascomús",
+            "category": "¿Cómo querés presentar tu intención?",
+            "message": "Tu intención",
+            "messagePlaceholder": "Contanos por quién o por qué rezamos juntos...",
+            "anonymous": "Quiero que mi intención sea anónima",
+            "submit": "Encender mi vela",
+            "submitting": "Enviando...",
+            "successPending": "Gracias por compartirla. La intención quedó pendiente de moderación pastoral.",
+            "error": "No pudimos registrar tu intención. Intentalo otra vez más tarde.",
+            "validationMessage": "Contanos tu pedido con al menos unas palabras.",
+            "moderationNotice": "Las intenciones se publican luego de una revisión pastoral. No compartas datos sensibles ni enlaces."
+        },
+        "categories": {
+            "gratitude": "Acción de gracias",
+            "petition": "Pedido",
+            "youth": "Juventud",
+            "family": "Familias"
+        },
+        "stats": {
+            "title": "Nuestra cadena de oración",
+            "subtitle": "Sumamos intenciones al mapa de la misión y las presentamos en cada adoración comunitaria.",
+            "intentions": "intenciones activas",
+            "prayers": "oraciones ofrecidas",
+            "notice": "Los pedidos aprobados se almacenan en nuestro servidor y quedan resguardados bajo moderación pastoral."
+        },
+        "filters": {
+            "all": "Todas las categorías",
+            "search": "Buscar por nombre o intención"
+        },
+        "wall": {
+            "title": "Intenciones compartidas",
+            "subtitle": "Ofrece una oración y ayuda a mantener encendida la llama de la esperanza.",
+            "offerPrayer": "Rezar por esta intención",
+            "praying": "Rezando...",
+            "empty": "Aún no hay intenciones con este filtro. ¡Animate a compartir la tuya!",
+            "loading": "Cargando intenciones aprobadas...",
+            "fetchError": "No pudimos cargar el muro en este momento. Intentá recargar la página.",
+            "prayerError": "No fue posible sumar tu oración. Intentá nuevamente más tarde."
+        }
+    },
+    "EnthronementsPage": {
+        "hero": {
+            "eyebrow": "Mapa misionero",
+            "title": "Entronizaciones de Carlo Acutis",
+            "subtitle": "Cada comunidad que recibe la reliquia abre un nuevo capítulo de evangelización. Filtrá por región o buscá por nombre para descubrir experiencias y fotos."
+        },
+        "filters": {
+            "region": "Región",
+            "all": "Todas",
+            "search": "Buscar",
+            "placeholder": "Ej. Chascomús, Catedral...",
+            "reset": "Limpiar filtros"
+        },
+        "stats": {
+            "total": "{count} entronizaciones registradas"
+        },
+        "gallery": {
+            "expand": "Ver galería",
+            "collapse": "Ocultar galería",
+            "alt": "Galería de {place} (imagen {index})"
+        },
+        "empty": "No encontramos entronizaciones con esos filtros. Probá con otros criterios."
+    },
+    "EventsPage": {
+        "hero": {
+            "eyebrow": "Agenda",
+            "title": "Próximos encuentros y misiones",
+            "subtitle": "Coordinamos visitas de la reliquia, vigilias juveniles y talleres multimedia. Aquí podés ver qué se viene y sumar a tu comunidad."
+        },
+        "upcomingTitle": "Próximos encuentros",
+        "pastTitle": "Lo que ya celebramos",
+        "upcoming": [
+            {
+                "date": "8 JUN • 11 hs",
+                "title": "Entronización en Nuestra Señora de Luján",
+                "location": "Chascomús, Buenos Aires",
+                "description": "Procesión, misa solemne y transmisión en vivo para colegios de la diócesis.",
+                "emphasis": "Se reciben intenciones hasta el 5 de junio."
+            },
+            {
+                "date": "13 JUN • 20 hs",
+                "title": "Vigilia juvenil \"Autopista al cielo\"",
+                "location": "Catedral Nuestra Señora de la Merced",
+                "description": "Adoración, testimonios y servicio solidario nocturno junto a Cáritas."
+            },
+            {
+                "date": "21 JUN • 19 hs",
+                "title": "Encuentro federal de devotos",
+                "location": "Sala virtual del proyecto",
+                "description": "Streaming interactivo con referentes de CABA, Tucumán, Córdoba y Mendoza.",
+                "emphasis": "Inscripción gratuita, cupos limitados."
+            }
+        ],
+        "past": [
+            {
+                "date": "10 MAY • 19 hs",
+                "title": "Concierto-oración en Castelli",
+                "location": "Parroquia Santa Rosa de Lima",
+                "description": "Más de 300 jóvenes compartieron vigilia y misión callejera."
+            },
+            {
+                "date": "23 ABR • 18 hs",
+                "title": "Entronización en la UCA",
+                "location": "Oratorio Carlo Acutis, Campus Puerto Madero",
+                "description": "Se inauguró un espacio de oración permanente para estudiantes."
+            },
+            {
+                "date": "12 MAR • 17 hs",
+                "title": "Gira de reliquia por General Guido",
+                "location": "Parroquia Nuestra Señora de la Merced",
+                "description": "Jóvenes visitaron escuelas y hogares con la reliquia itinerante."
+            },
+            {
+                "date": "28 FEB • 20 hs",
+                "title": "Vigilia digital de testimonios",
+                "location": "Streaming oficial",
+                "description": "Se compartieron 18 testimonios de gracias recibidas gracias a Carlo."
+            }
+        ],
+        "sidebar": {
+            "title": "¿Querés sumar una parada?",
+            "description": "Coordinamos logística pastoral, prensa y recursos para entronizar la reliquia o animar talleres multimedia.",
+            "primaryCta": "Hablar por WhatsApp",
+            "secondaryCta": "Ver contactos"
+        }
+    },
+    "ContactPage": {
+        "hero": {
+            "eyebrow": "Contacto pastoral",
+            "title": "Coordinemos la misión juntos",
+            "subtitle": "Podemos acompañar entronizaciones, retiros, talleres multimedia y procesos de difusión. Elegí el canal que prefieras o completá el formulario."
+        },
+        "channelsTitle": "Canales directos",
+        "channelsSubtitle": "Respondemos en menos de 24 horas. Para urgencias litúrgicas o visitas de la reliquia, usá WhatsApp.",
+        "channels": [
+            {
+                "label": "WhatsApp",
+                "value": "+54 9 221 409 9792",
+                "href": "https://wa.me/+5492214099792"
+            },
+            {
+                "label": "Correo general",
+                "value": "carloacutischascomus@gmail.com",
+                "href": "mailto:carloacutischascomus@gmail.com"
+            },
+            {
+                "label": "Instagram",
+                "value": "@carloacutischascomus",
+                "href": "https://www.instagram.com/carloacutischascomus/"
+            }
+        ],
+        "availability": "Horarios de atención: lunes a viernes de 9 a 18 hs (GMT-3). Los fines de semana respondemos según disponibilidad de la agenda pastoral.",
+        "formTitle": "Escribinos desde acá",
+        "formSubtitle": "Dejanos tus datos y nos pondremos en contacto para coordinar la propuesta."
+    },
+    "LibraryPage": {
+        "hero": {
+            "eyebrow": "Recursos pastorales",
+            "title": "Biblioteca digital Carlo Acutis",
+            "subtitle": "Materiales listos para compartir en parroquias, colegios y comunidades. Pedinos el acceso completo para descargar presentaciones, fichas y piezas gráficas."
+        },
+        "categories": [
+            {
+                "title": "Animación litúrgica",
+                "description": "Guiones, cantos y adaptaciones para misas juveniles y adoraciones eucarísticas.",
+                "resources": [
+                    { "label": "Guía de adoración eucarística para adolescentes", "type": "PDF" },
+                    { "label": "Cancionero digital Carlo Acutis", "type": "Playlist" },
+                    { "label": "Ambientación para velas digitales", "type": "Pack visual" }
+                ]
+            },
+            {
+                "title": "Educación y catequesis",
+                "description": "Secuencias pedagógicas y actividades para primaria, secundaria y jóvenes adultos.",
+                "resources": [
+                    { "label": "Serie de talleres \"Santos en la era digital\"", "type": "Presentación" },
+                    { "label": "Fichas didácticas sobre la Eucaristía", "type": "Cuadernillo" },
+                    { "label": "Infografías para redes escolares", "type": "Pack gráfico" }
+                ]
+            },
+            {
+                "title": "Comunicación y prensa",
+                "description": "Piezas multimedia para anunciar entronizaciones, conferencias y testimonios.",
+                "resources": [
+                    { "label": "Kit de prensa para entronizaciones", "type": "ZIP" },
+                    { "label": "Plantillas para historias de Instagram", "type": "Canva" },
+                    { "label": "Testimonios en audio y video", "type": "Playlist" }
+                ]
+            }
+        ],
+        "actions": {
+            "request": "Solicitar acceso"
+        },
+        "cta": {
+            "title": "¿Necesitás otro formato o idioma?",
+            "subtitle": "También producimos recursos a pedido para diócesis y movimientos.",
+            "primary": "Escribir al equipo",
+            "secondary": "Ver opciones de contacto"
+        }
+    },
+    "AdminIntentions": {
+        "title": "Moderación de intenciones",
+        "description": "Este panel permite revisar, aprobar o rechazar los pedidos de oración. El token de administración se guarda localmente en este navegador.",
+        "tokenLabel": "Token de administrador",
+        "tokenPlaceholder": "Pegá aquí tu token seguro…",
+        "saveToken": "Guardar token",
+        "statusLabel": "Estado a mostrar",
+        "refresh": "Actualizar lista",
+        "empty": "No hay intenciones con el estado seleccionado.",
+        "loading": "Cargando intenciones…",
+        "errors": {
+            "missingToken": "Necesitás ingresar el token de administrador para continuar.",
+            "load": "No pudimos cargar las intenciones. Verificá el token o recargá la página.",
+            "update": "No pudimos actualizar la intención. Intentalo nuevamente.",
+            "delete": "No pudimos eliminar la intención. Intentalo nuevamente."
+        },
+        "table": {
+            "created": "Creada",
+            "category": "Categoría",
+            "message": "Mensaje",
+            "status": "Estado",
+            "actions": "Acciones",
+            "prayerCount": "Oraciones"
+        },
+        "actions": {
+            "approve": "Aprobar",
+            "reject": "Rechazar",
+            "delete": "Eliminar",
+            "confirm": "¿Confirmás esta acción?"
+        },
+        "statuses": {
+            "pending": "Pendiente",
+            "approved": "Aprobada",
+            "rejected": "Rechazada"
+        },
+        "messages": {
+            "tokenSaved": "Token guardado correctamente.",
+            "updated": "La intención se actualizó.",
+            "deleted": "La intención se eliminó."
+        }
     },
     "Videos": {
         "home": "Inicio",
@@ -124,6 +486,12 @@
             "cardTitle": "Santa Misa en la Catedral",
             "cardSubtitle": "Iglesia Catedral \"Nuestra Señora de la Merced\"",
             "cardDetailedText": "Al llegar a la Catedral, se celebrará la Santa Misa en honor a Carlo Acutis, quien falleció el 10 de octubre de 2016 a los 15 años."
+        },
+        "controls": {
+            "first": "Ir al comienzo",
+            "last": "Ir al final",
+            "next": "Siguiente",
+            "previous": "Anterior"
         }
     },
     "entronizaciones": {

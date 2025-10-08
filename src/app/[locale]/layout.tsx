@@ -64,9 +64,9 @@ export default async function RootLayout({
         <html lang={locale} className="bg-mosaic">
             <body className={inter.className}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
-                    <div className="flex flex-col min-h-screen max-w-4xl mx-auto content-body">
+                    <div className="flex flex-col min-h-screen max-w-6xl mx-auto content-body">
                         <Header />
-                        <div className="flex-grow mt-20">{children}</div>
+                        <div className="flex-grow mt-16">{children}</div>
                     </div>
                 </NextIntlClientProvider>
                 <Footer />

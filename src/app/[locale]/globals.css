@@ -1,87 +1,95 @@
 @tailwind base;
 @tailwind components;
 
+@tailwind utilities;
+
+:root {
+    --color-primary: #b11f2b;
+    --color-primary-soft: #f7ebe8;
+    --color-ink: #2c2a29;
+    --color-subtle: #746d6a;
+    --surface-base: #fdfbf7;
+    --surface-alt: #fff6e9;
+}
+
 @font-face {
     font-family: 'ZapfinoLinotypeOne';
     src: url('/fonts/ZapfinoLinotypeOne.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
-h1 {
-    font-family: 'ZapfinoLinotypeOne', sans-serif;
-    font-size: 60px;
-    color: #be1621;
+body {
+    background: var(--surface-base);
+    color: var(--color-ink);
+    font-feature-settings: 'liga', 'kern';
+    font-size: 15px;
+    line-height: 1.7;
 }
 
-@media (max-width: 768px) {
-    /* Ajusta el punto de ruptura según tus necesidades */
-    h1 {
-        margin-top: 25px;
-        font-size: 40px; /* Tamaño de fuente reducido a la mitad */
-        line-height: 30px !important;
-    }
+h1,
+.heading-script {
+    font-family: 'ZapfinoLinotypeOne', serif;
+    color: var(--color-primary);
+    font-size: clamp(2.25rem, 4vw, 3.5rem);
+    line-height: 1.2;
 }
-
-@tailwind utilities;
 
 nav a {
-    color: #1d1d1d; /* Color del texto del enlace */
-    text-decoration: none; /* Remueve el subrayado por defecto */
-    padding: 8px 12px; /* Añade algo de espacio alrededor del enlace */
-    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transición suave */
-    border-bottom: 2px solid transparent; /* Añade un borde inferior invisible */
-    font-size: 12px;
+    color: var(--color-subtle);
+    text-decoration: none;
+    padding: 4px 6px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: inherit;
+    letter-spacing: 0.08em;
 }
 
 nav a:hover {
-    color: #d66d6d; /* Cambia el color al pasar el cursor */
-    border-bottom: 2px solid #d66d6d; /* Subraya el enlace al pasar el cursor */
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
 }
 
 .hero {
-    margin-top: -100px;
-    z-index: -3;
+    margin-top: 0;
+    z-index: auto;
 }
 
-/* Aplica el fondo en mosaico al contenedor exterior */
 .bg-mosaic {
-    background-image: url('/img/splash_bkg_01.jpg'); /* Ajusta la ruta según donde hayas colocado la imagen */
-    background-repeat: repeat;
-    background-size: auto; /* Para mantener el tamaño original de la imagen en el mosaico */
-    min-height: 100vh; /* Asegura que cubra al menos toda la altura de la ventana */
-    padding: 20px; /* Añade padding si es necesario para separar el contenido del borde */
+    background: radial-gradient(circle at 0% 0%, #fff6e9 0%, #fdebe2 40%, #fdfbf7 100%);
+    min-height: 100vh;
+    padding: 20px;
 }
 
-/* Establece el fondo blanco para el cuerpo del contenido */
 .content-body {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 20px;
-    border-radius: 8px; /* Opcional: para bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: para añadir sombra */
+    border-radius: 16px;
+    box-shadow: 0 24px 48px rgba(177, 31, 43, 0.08);
 }
 
 .custom-button {
     display: inline-flex;
     align-items: center;
-    justify-content: center; /* Centra el contenido dentro del círculo */
-    width: 30px; /* Ajusta el tamaño del círculo */
-    height: 30px; /* Asegura que el ancho y alto sean iguales */
-    border: 1px solid #ffffff; /* Color del borde */
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffffff;
     background-color: #f7fafc;
-    border-radius: 50%; /* Hace el botón completamente circular */
+    border-radius: 50%;
     text-decoration: none;
-    color: #1a202c; /* Color del texto */
+    color: #1a202c;
     transition: all 0.3s ease;
 }
 
 .custom-button:hover {
-    background-color: #f7fafc; /* Color de fondo al pasar el cursor */
-    border-color: #cbd5e0; /* Color del borde al pasar el cursor */
+    background-color: #f7fafc;
+    border-color: #cbd5e0;
 }
 
 .icon {
-    margin-right: 0px; /* Espacio entre el icono y el texto */
+    margin-right: 0px;
 }
 
 .icon img {
@@ -93,11 +101,10 @@ nav a:hover {
 }
 
 .rc-card-title {
-    color: #be1621 !important; /* Rojo personalizado */
+    color: var(--color-primary) !important;
     padding-top: 10px;
 }
 
-/* Ocultar el botón "Jump to" */
 .SelecterLabel-sc-168kw5q-4.fVncYp {
     display: none;
 }
@@ -116,6 +123,55 @@ nav a:hover {
 
 .title-testimonios {
     margin-top: -50px;
+}
+
+.section-shell {
+    background: linear-gradient(180deg, #ffffff 0%, #fff7f0 100%);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 18px 38px rgba(44, 42, 41, 0.08);
+}
+
+.card-soft {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(177, 31, 43, 0.12);
+    border-radius: 16px;
+    padding: 24px;
+    backdrop-filter: blur(12px);
+}
+
+.eyebrow {
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: var(--color-subtle);
+}
+
+.btn-primary-soft {
+    background: var(--color-primary);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary-soft:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 24px rgba(177, 31, 43, 0.25);
+}
+
+.btn-secondary-light {
+    background: var(--surface-alt);
+    color: var(--color-primary);
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-secondary-light:hover {
+    background: rgba(177, 31, 43, 0.12);
 }
 
 /* .graphcomment {

@@ -35,31 +35,35 @@ const Timeline = () => {
     ];
 
     return (
-        <div style={{ width: '100%', height: '500px' }}>
+        <div className="h-[480px] w-full">
             <Chrono
                 items={items}
-                mode="VERTICAL"
-                slideShow
-                slideItemDuration={3000}
-                hideControls={true}
+                mode="VERTICAL_ALTERNATING"
+                slideShow={false}
+                cardWidth={320}
+                useReadMore={true}
                 buttonTexts={{
-                    first: 'Jump to First',
-                    last: 'Jump to Last',
-                    next: 'Next',
-                    previous: 'Previous',
+                    first: t('controls.first'),
+                    last: t('controls.last'),
+                    next: t('controls.next'),
+                    previous: t('controls.previous'),
                 }}
                 theme={{
-                    primary: 'black',
-                    secondary: 'white',
-                    cardBgColor: 'white',
-                    titleColor: 'black',
-                    titleColorActive: '#be1621',
+                    primary: '#b11f2b',
+                    secondary: '#fef4ea',
+                    cardBgColor: '#ffffff',
+                    cardForeColor: '#2c2a29',
+                    titleColor: '#746d6a',
+                    titleColorActive: '#b11f2b',
                 }}
                 fontSizes={{
-                    title: '20px',
-                    cardTitle: '40px',
-                    cardSubtitle: '15px',
-                    cardDetailedText: '10px',
+                    title: '16px',
+                    cardTitle: '20px',
+                    cardSubtitle: '14px',
+                    cardDetailedText: '13px',
+                }}
+                classNames={{
+                    card: 'shadow-lg border border-white/70 rounded-2xl',
                 }}
             />
         </div>
