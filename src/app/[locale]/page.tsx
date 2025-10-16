@@ -1,7 +1,6 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import Script from 'next/script';
 import Image from 'next/image';
 import './globals.css';
 import Timeline from '../../components/timeline-carlo-acutis';
@@ -24,23 +23,7 @@ export default function Home() {
     }
 
     return (
-        <>
-            <Script id="matomo-tracking">
-                {`
-                    var _paq = window._paq = window._paq || [];
-                    _paq.push(['trackPageView']);
-                    _paq.push(['enableLinkTracking']);
-                    (function() {
-                        var u = "//rampazzo-matomo.ndorzn.easypanel.host/";
-                        _paq.push(['setTrackerUrl', u + 'matomo.php']);
-                        _paq.push(['setSiteId', '2']);
-                        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-                        g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
-                    })();
-                `}
-            </Script>
-
-            <div className="flex flex-col items-center justify-center min-h-screen p-4 hero">
+        <div className="flex flex-col items-center justify-center min-h-screen p-4 hero">
 
             {/* Tarjeta de Canonización */}
             <div className="w-full max-w-2xl mb-8 p-6 bg-gradient-to-r from-yellow-50 to-blue-50 rounded-xl shadow-lg border border-yellow-200 hover:shadow-xl transition-shadow duration-300">
@@ -215,6 +198,5 @@ export default function Home() {
 
             <ContactForm />
         </div>
-        </>
     );
 }
